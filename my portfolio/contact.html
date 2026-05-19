@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Contact Noor Fiza for WordPress development, digital marketing, e-commerce solutions, frontend development, video editing, and business support."
+  />
+  <title>Contact Me | Noor Fiza Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet"
+  />
+<link rel="shortcut icon" href="image/NOOR FIZA.png" type="image/x-icon">
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+  --bg-dark: #020724;
+  --bg-navy: #061037;
+  --bg-deep: #01051a;
+  --bg-panel: #0a1540;
+
+  --primary: #8b4dff;
+  --primary-light: #a66bff;
+  --primary-dark: #5d2bd6;
+  --purple-soft: #eee7ff;
+  --purple-glow: rgba(139, 77, 255, 0.45);
+
+  --text-white: #ffffff;
+  --text-light: #f3f1ff;
+  --text-dark: #111638;
+  --text-navy: #14194a;
+  --text-muted: #6b6f8a;
+
+  --card-bg: #ffffff;
+  --section-soft: #f5f0ff;
+  --border-soft: #e6e0f5;
+  --border-dark: rgba(255, 255, 255, 0.12);
+
+  --shadow-soft: 0 12px 35px rgba(10, 15, 45, 0.12);
+  --shadow-card: 0 10px 30px rgba(20, 25, 74, 0.1);
+  --shadow-purple: 0 0 25px rgba(139, 77, 255, 0.45);
+
+  --radius-card: 18px;
+  --radius-lg: 28px;
+  --transition: all 0.35s ease;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1320px, 88%);
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 84px;
+  background: rgba(2, 7, 36, 0.92);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-dark);
+  z-index: 999;
+  transition: var(--transition);
+}
+
+.header.scrolled {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-white);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.logo-mark {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 44px;
+  color: var(--primary);
+  text-shadow: var(--shadow-purple);
+  letter-spacing: -3px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.nav-link {
+  color: var(--text-light);
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  width: 0;
+  height: 3px;
+  border-radius: 20px;
+  background: var(--primary);
+  transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-light);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.hire-btn,
+.footer-btn,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 9px;
+  transition: var(--transition);
+}
+
+.hire-btn {
+  padding: 14px 26px;
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  box-shadow: var(--shadow-purple);
+}
+
+.hire-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(139, 77, 255, 0.55);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-white);
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero-section {
+  min-height: 650px;
+  padding-top: 84px;
+  background:
+    radial-gradient(circle at 75% 45%, rgba(139, 77, 255, 0.35), transparent 28%),
+    radial-gradient(circle at 15% 20%, rgba(139, 77, 255, 0.18), transparent 25%),
+    linear-gradient(135deg, var(--bg-deep), var(--bg-dark) 45%, var(--bg-navy));
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  right: 32%;
+  top: 115px;
+  width: 90px;
+  height: 50px;
+  background-image: radial-gradient(var(--primary) 2px, transparent 2px);
+  background-size: 18px 18px;
+  opacity: 0.28;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  right: 21%;
+  top: 85px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  border: 1px solid rgba(139, 77, 255, 0.08);
+  box-shadow:
+    inset 0 0 0 35px rgba(139, 77, 255, 0.02),
+    inset 0 0 0 70px rgba(139, 77, 255, 0.02),
+    inset 0 0 0 110px rgba(139, 77, 255, 0.02);
+}
+
+.hero-container {
+  min-height: 566px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-label {
+  color: var(--primary);
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.hero-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(48px, 5vw, 76px);
+  line-height: 1;
+  color: var(--text-white);
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.btn {
+  min-height: 58px;
+  padding: 0 30px;
+  font-size: 18px;
+}
+
+.btn-primary {
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  box-shadow: 0 10px 30px rgba(139, 77, 255, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 42px rgba(139, 77, 255, 0.55);
+}
+
+.btn-outline {
+  color: var(--text-white);
+  background: rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.42);
+}
+
+.btn-outline:hover {
+  border-color: var(--primary);
+  background: rgba(139, 77, 255, 0.14);
+  transform: translateY(-5px);
+}
+
+.hero-mini-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.mini-card {
+  min-height: 98px;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.035);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: var(--transition);
+}
+
+.mini-card i {
+  color: var(--primary);
+  font-size: 34px;
+  filter: drop-shadow(0 0 14px rgba(139, 77, 255, 0.65));
+}
+
+.mini-card h3 {
+  color: var(--text-white);
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.mini-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.mini-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(139, 77, 255, 0.65);
+  box-shadow: var(--shadow-purple);
+}
+
+.hero-image {
+  align-self: end;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 565px;
+  object-fit: cover;
+  object-position: bottom right;
+  filter: drop-shadow(0 28px 45px rgba(0, 0, 0, 0.35));
+}
+
+/* Section Heading */
+.section-heading h2 {
+  color: var(--text-navy);
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 800;
+}
+
+.section-heading span {
+  display: block;
+  width: 52px;
+  height: 4px;
+  margin-top: 12px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  border-radius: 30px;
+}
+
+.section-heading.center {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.section-heading.center span {
+  margin-inline: auto;
+}
+
+/* Contact */
+.contact-section {
+  padding: 34px 0 16px;
+  background: #ffffff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 38px;
+  align-items: start;
+}
+
+.form-card,
+.info-card,
+.social-box,
+.why-card,
+.reach-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-card);
+  border-radius: var(--radius-card);
+  transition: var(--transition);
+}
+
+.form-card {
+  padding: 30px;
+}
+
+.form-card:hover,
+.info-card:hover,
+.social-box:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-soft);
+}
+
+form {
+  margin-top: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group i {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary);
+  font-size: 18px;
+  z-index: 1;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  border: 1.5px solid var(--border-soft);
+  outline: none;
+  background: #ffffff;
+  border-radius: 13px;
+  padding: 18px 18px 18px 58px;
+  color: var(--text-dark);
+  font-family: inherit;
+  font-size: 15px;
+  transition: var(--transition);
+  box-shadow: inset 0 0 0 1px rgba(139, 77, 255, 0.02);
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(139, 77, 255, 0.12);
+}
+
+.textarea-group {
+  margin-bottom: 20px;
+}
+
+.textarea-group i {
+  top: 24px;
+  transform: none;
+}
+
+.textarea-group textarea {
+  min-height: 158px;
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+  min-height: 62px;
+  border: none;
+  border-radius: 12px;
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(139, 77, 255, 0.4);
+}
+
+.form-status {
+  margin-top: 14px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.form-status.success {
+  color: #148c4a;
+}
+
+.form-status.error {
+  color: #d93025;
+}
+
+.input-error input,
+.input-error textarea {
+  border-color: #d93025;
+}
+
+/* Info */
+.info-wrapper {
+  display: grid;
+  gap: 18px;
+}
+
+.info-card,
+.social-box {
+  padding: 24px;
+}
+
+.info-list {
+  margin-top: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  transition: var(--transition);
+}
+
+.info-icon,
+.why-icon,
+.reach-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--purple-soft);
+  color: var(--primary-dark);
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.info-item h3 {
+  color: var(--text-navy);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.info-item p {
+  color: var(--text-navy);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info-item:hover {
+  transform: translateX(8px);
+  border-color: rgba(139, 77, 255, 0.35);
+  box-shadow: var(--shadow-card);
+}
+
+.info-item:hover .info-icon {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--text-white);
+}
+
+.social-links {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-around;
+  gap: 18px;
+}
+
+.social-links a,
+.footer-social a {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--bg-panel);
+  color: var(--card-bg);
+  font-size: 25px;
+  transition: var(--transition);
+}
+
+.social-links a:hover,
+.footer-social a:hover {
+  transform: translateY(-8px) scale(1.06);
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  box-shadow: var(--shadow-purple);
+}
+
+/* Why Section */
+.why-section {
+  padding: 12px 0 18px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.why-card {
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.why-card h3 {
+  color: var(--text-navy);
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.why-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.why-card:hover,
+.reach-card:hover {
+  transform: translateY(-9px);
+  border-color: rgba(139, 77, 255, 0.42);
+  box-shadow: var(--shadow-soft);
+}
+
+.why-card:hover .why-icon,
+.reach-card:hover .reach-icon {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--text-white);
+  transform: rotate(6deg) scale(1.05);
+}
+
+/* Reach Section */
+.reach-section {
+  padding: 10px 0 30px;
+}
+
+.reach-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+}
+
+.reach-card {
+  padding: 24px 18px 22px;
+  position: relative;
+  min-height: 190px;
+}
+
+.reach-icon {
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.reach-card h3 {
+  color: var(--text-navy);
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.reach-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.card-line {
+  position: absolute;
+  left: 18px;
+  bottom: 14px;
+  width: 48px;
+  height: 5px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  transition: var(--transition);
+}
+
+.reach-card:hover .card-line {
+  width: 78px;
+}
+
+/* CTA */
+.cta-section {
+  padding: 0 0 34px;
+}
+
+.cta-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 142px;
+  border-radius: var(--radius-lg);
+  padding: 26px 74px;
+  background:
+    radial-gradient(circle at 12% 50%, rgba(139, 77, 255, 0.35), transparent 18%),
+    linear-gradient(135deg, var(--bg-deep), var(--bg-navy));
+  border: 2px solid rgba(139, 77, 255, 0.55);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 30px;
+  box-shadow: var(--shadow-card);
+}
+
+.cta-banner::after {
+  content: "";
+  position: absolute;
+  right: 38px;
+  top: 36px;
+  width: 100px;
+  height: 80px;
+  background-image: radial-gradient(var(--primary) 2px, transparent 2px);
+  background-size: 16px 16px;
+  opacity: 0.28;
+}
+
+.cta-icon {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--text-white);
+  font-size: 36px;
+  background: radial-gradient(circle, var(--primary-light), var(--primary-dark));
+  box-shadow: var(--shadow-purple);
+}
+
+.cta-text h2 {
+  color: var(--text-white);
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.cta-text p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 18px;
+}
+
+/* Footer */
+.footer {
+  color: var(--text-white);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(139, 77, 255, 0.13), transparent 28%),
+    linear-gradient(135deg, var(--bg-deep), #03103a 55%, var(--bg-deep));
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 1.15fr 1fr 1.1fr;
+  gap: 34px;
+  padding: 36px 0 30px;
+}
+
+.footer-col {
+  position: relative;
+}
+
+.footer-col:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 135px;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  right: -17px;
+  top: 16px;
+}
+
+.footer-brand {
+  margin-bottom: 12px;
+
+}
+
+.footer-brand .brand-mark {
+  font-size: 3rem;
+}
+
+.footer-brand .brand-name {
+  font-size: 1.72rem;
+}
+
+.footer-about p,
+.footer-cta p {
+  color: rgba(255, 255, 255, 0.79);
+  max-width: 340px;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.social-links a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--text-white);
+  border: 2px solid rgba(255, 255, 255, 0.74);
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  border-color: var(--primary);
+  background: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-purple);
+}
+
+.footer-col h3 {
+  font-size: 1.18rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.two-column-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 28px;
+}
+
+.footer-links a,
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--primary-light);
+  transform: translateX(4px);
+}
+
+.footer-links i {
+  font-size: 0.75rem;
+}
+
+.contact-list {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-list i {
+  color: rgba(255, 255, 255, 0.88);
+  width: 28px;
+  height: 28px;
+  font-size: 1.35rem;
+  display: inline-grid;
+  place-items: center;
+}
+
+.footer-cta .btn {
+  margin-top: 18px;
+  width: 100%;
+  max-width: 300px;
+}
+.gap li{
+  margin: 10px;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 17px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 600;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .hero-mini-cards,
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reach-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: 76px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 76px;
+    right: -100%;
+    width: 290px;
+    height: calc(100vh - 76px);
+    background: var(--bg-dark);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 34px;
+    gap: 26px;
+    transition: var(--transition);
+    border-left: 1px solid var(--border-dark);
+  }
+
+  .nav-menu.show {
+    right: 0;
+  }
+
+  .nav-link::after {
+    bottom: -8px;
+  }
+
+  .hire-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 70px 0 0;
+  }
+
+  .hero-content p {
+    margin-inline: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    padding: 35px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: min(92%, 100%);
+  }
+
+  .logo {
+    font-size: 23px;
+  }
+
+  .logo-mark {
+    font-size: 36px;
+  }
+
+  .hero-section {
+    min-height: auto;
+  }
+
+  .hero-mini-cards,
+  .form-row,
+  .why-grid,
+  .reach-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card,
+  .info-card,
+  .social-box {
+    padding: 22px;
+  }
+
+  .why-card {
+    align-items: flex-start;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-link-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    padding-inline: 20px;
+  }
+
+  .hero-buttons {
+    gap: 14px;
+  }
+
+  .mini-card {
+    text-align: left;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding-left: 50px;
+  }
+
+  .cta-text h2 {
+    font-size: 25px;
+  }
+
+  .cta-icon {
+    width: 72px;
+    height: 72px;
+    font-size: 30px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="/home page/index.html" class="logo" aria-label="Noor Fiza Portfolio">
+        <span class="logo-mark">NF</span>
+        <span>Noor Fiza</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="About.html" class="nav-link">About</a></li>
+        <li><a href="skill.html" class="nav-link">Skills</a></li>
+        <li><a href="project.html" class="nav-link">Projects</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+
+      <a href="https://about.me/noorhameed" target="_blank" class="hire-btn">
+        Hire Me <i class="fa-solid fa-chevron-right"></i>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open mobile menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header> 
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <span class="section-label">GET IN TOUCH</span>
+          <h1>Contact Me</h1>
+          <p>
+            I’m available for WordPress development, digital marketing,
+            e-commerce solutions, video editing, frontend development, and
+            collaboration opportunities. Let’s connect and create something
+            amazing together.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="/contacts/index.html" class="btn btn-primary">
+              Send Message <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a href="https://wa.me/923236556906" target="_blank" class="btn btn-outline">
+              Go to Whatsapp
+            </a>
+          </div>
+
+          <div class="hero-mini-cards">
+            <article class="mini-card">
+              <i class="fa-solid fa-bolt"></i>
+              <div>
+                <h3>Quick Response</h3>
+                <p>I reply within 24 hours</p>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <h3>Available for Freelance Work</h3>
+                <p>Open to new projects</p>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <i class="fa-solid fa-star"></i>
+              <div>
+                <h3>Let’s Build Something Great</h3>
+                <p>Your success is my goal</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-image reveal">
+          <div class="circle-lines"></div>
+          <img src="image/contact us.png" alt="Noor Fiza working on laptop" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="form-card reveal">
+          <div class="section-heading left">
+            <h2>Send Me a Message</h2>
+            <span></span>
+          </div>
+
+         <form id="contactForm" action="https://formspree.io/f/mojrwkvy" method="POST">
+  <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+  <div class="form-row">
+    <div class="input-group">
+      <i class="fa-regular fa-user"></i>
+      <input type="text" id="name" name="name" placeholder="Full Name" required>
+    </div>
+
+    <div class="input-group">
+      <i class="fa-regular fa-envelope"></i>
+      <input type="email" id="email" name="email" placeholder="Email Address" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="input-group">
+      <i class="fa-solid fa-phone"></i>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+    </div>
+
+    <div class="input-group">
+      <i class="fa-regular fa-tag"></i>
+      <input type="text" id="subject" name="subject" placeholder="Subject" required>
+    </div>
+  </div>
+
+  <div class="input-group textarea-group">
+    <i class="fa-regular fa-pen-to-square"></i>
+    <textarea id="message" name="message" placeholder="Message" required></textarea>
+  </div>
+
+  <button type="submit" class="submit-btn">
+    Send Message <i class="fa-solid fa-paper-plane"></i>
+  </button>
+
+  <p class="form-status" id="formStatus"></p>
+</form>
+        </div>
+
+        <aside class="info-wrapper reveal">
+          <div class="info-card">
+            <div class="section-heading left">
+              <h2>Contact Information</h2>
+              <span></span>
+            </div>
+
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h3>Email</h3>
+                  <p>noorfiza6h@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h3>Whatsapp</h3>
+                  <p>+92 3236556906</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h3>Location</h3>
+                  <p>Lahore, Pakistan</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div>
+                  <h3>Working Hours</h3>
+                  <p>Mon - Sat | 9:00 AM - 7:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-box">
+            <div class="section-heading left">
+              <h2>Let’s Connect on Social Media</h2>
+              <span></span>
+            </div>
+
+            <div class="social-links">
+              <a href="https://www.facebook.com/noorfizahm" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/noorfiza6h/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/noorfiz6h/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/@NoorFiza6h" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.upwork.com/freelancers/~016490fe7ae7784b66?viewMode=1" target="_blank" rel="noopener noreferrer" aria-label="Upwork"><i class="fa-brands fa-upwork"></i></a>
+
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Why Contact Me -->
+    <section class="why-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <h2>Why Contact Me?</h2>
+          <span></span>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <div class="why-icon"><i class="fa-solid fa-comment-dots"></i></div>
+            <div>
+              <h3>Project Discussion</h3>
+              <p>Let’s talk about your ideas and project requirements.</p>
+            </div>
+          </article>
+
+          <article class="why-card reveal">
+            <div class="why-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+            <div>
+              <h3>Custom Solutions</h3>
+              <p>I provide tailored solutions that fit your business goals.</p>
+            </div>
+          </article>
+
+          <article class="why-card reveal">
+            <div class="why-icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <div>
+              <h3>Fast Communication</h3>
+              <p>Clear and quick communication to keep your project on track.</p>
+            </div>
+          </article>
+
+          <article class="why-card reveal">
+            <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+            <div>
+              <h3>Long-Term Support</h3>
+              <p>Ongoing support even after your project is completed.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Reach -->
+    <section class="reach-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <h2>What You Can Reach Me For</h2>
+          <span></span>
+        </div>
+
+        <div class="reach-grid">
+          <article class="reach-card reveal">
+            <div class="reach-icon"><i class="fa-brands fa-wordpress"></i></div>
+            <h3>WordPress Development</h3>
+            <p>Custom websites, themes, plugins & integrations.</p>
+            <span class="card-line"></span>
+          </article>
+
+          <article class="reach-card reveal">
+            <div class="reach-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h3>Digital Marketing</h3>
+            <p>SEO, social media, paid ads & content strategy.</p>
+            <span class="card-line"></span>
+          </article>
+
+          <article class="reach-card reveal">
+            <div class="reach-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <h3>E-commerce Solutions</h3>
+            <p>Online stores, product listing & optimization.</p>
+            <span class="card-line"></span>
+          </article>
+
+          <article class="reach-card reveal">
+            <div class="reach-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Frontend Development</h3>
+            <p>Responsive, fast & modern HTML, CSS, JavaScript.</p>
+            <span class="card-line"></span>
+          </article>
+
+          <article class="reach-card reveal">
+            <div class="reach-icon"><i class="fa-solid fa-film"></i></div>
+            <h3>Video Editing</h3>
+            <p>YouTube, social media & promotional videos.</p>
+            <span class="card-line"></span>
+          </article>
+
+          <article class="reach-card reveal">
+            <div class="reach-icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h3>ACCA & Business Support</h3>
+            <p>Accounting, finance & business management.</p>
+            <span class="card-line"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-icon">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+
+          <div class="cta-text">
+            <h2>Have a project in mind?</h2>
+            <p>Let’s work together to bring your ideas to life.</p>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary">
+            Let’s Talk <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="brand footer-brand" >
+          <span  class="logo-mark" >NF</span>
+          <span class="brand-name">Noor Fiza</span>
+        </a>
+        <p>
+          Helping businesses grow online with creative solutions in web development,
+          digital marketing, e-commerce, and video editing.
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/noorfizahm" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/noorfiza6h/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/noorfiz6h/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NoorFiza6h" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <div class="footer-link-columns">
+          <ul>
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li>
+              <a href="About.html"><i class="fa-solid fa-chevron-right"></i> About</a>
+            
+            </li>
+            
+            <li><a href="skill.html"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+          </ul>
+          <ul>
+            <li><a href="project.html"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div> 
+
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <ul class="gap">
+          <li><i class="fa-regular fa-envelope"></i> noorfiza6h@gnail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +92 3236556906</li>
+          <li><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</li>
+        </ul>
+      </div>
+
+      <div class="footer-cta">
+        <h3>Let's Work Together</h3>
+        <p>Have a project in mind? I'd love to hear about it.</p>
+        <a href="contact.html" class="btn btn-primary">
+          Let's Work Together <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Noor Fiza. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    // Mobile Menu Toggle
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+const navLinks = document.querySelectorAll(".nav-link");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+
+  const icon = menuToggle.querySelector("i");
+  icon.classList.toggle("fa-bars");
+  icon.classList.toggle("fa-xmark");
+});
+
+// Close mobile menu when clicking a link
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("show");
+
+    const icon = menuToggle.querySelector("i");
+    icon.classList.add("fa-bars");
+    icon.classList.remove("fa-xmark");
+  });
+});
+
+// Header shadow on scroll
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 40) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+// Smooth active link update
+const sections = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", () => {
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 120;
+    const sectionHeight = section.offsetHeight;
+
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      currentSection = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+ 
+
+    if (link.getAttribute("href") === `#${currentSection}`) {
+      link.classList.add("active");
+    }
+  });
+});
+
+// Reveal animation using Intersection Observer
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  }
+);
+
+revealElements.forEach((element) => {
+  revealObserver.observe(element);
+});
+
+// Contact Form Validation
+// const contactForm = document.getElementById("contactForm");
+// const formStatus = document.getElementById("formStatus");
+
+// contactForm.addEventListener("submit", (event) => {
+//   event.preventDefault();
+
+//   const name = document.getElementById("name");
+//   const email = document.getElementById("email");
+//   const phone = document.getElementById("phone");
+//   const subject = document.getElementById("subject");
+//   const message = document.getElementById("message");
+
+//   const fields = [name, email, phone, subject, message];
+
+//   let isValid = true;
+
+//   fields.forEach((field) => {
+//     const parent = field.closest(".input-group");
+
+//     if (field.value.trim() === "") {
+//       parent.classList.add("input-error");
+//       isValid = false;
+//     } else {
+//       parent.classList.remove("input-error");
+//     }
+//   });
+
+//   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+//   if (email.value.trim() !== "" && !emailPattern.test(email.value.trim())) {
+//     email.closest(".input-group").classList.add("input-error");
+//     isValid = false;
+//   }
+
+//   if (!isValid) {
+//     formStatus.textContent = "Please fill all fields correctly before submitting.";
+//     formStatus.className = "form-status error";
+//     return;
+//   }
+
+//   formStatus.textContent = "Thank you! Your message has been submitted successfully.";
+//   formStatus.className = "form-status success";
+
+//   contactForm.reset();
+
+//   setTimeout(() => {
+//     formStatus.textContent = "";
+//     formStatus.className = "form-status";
+//   }, 4000);
+// });
+  </script>
+</body>
+</html>

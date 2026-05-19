@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Noor Fiza | Services</title>
+  <meta
+    name="description"
+    content="Explore professional services by Noor Fiza including WordPress development, e-commerce solutions, digital marketing, eBay store management, frontend development, video editing, ACCA study support, and virtual assistance."
+  />
+<link rel="shortcut icon" href="im" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+<link rel="shortcut icon" href="image/NOOR FIZA.png" type="image/x-icon">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+    :root {
+      --bg-dark: #020724;
+      --bg-navy: #061037;
+      --bg-deep: #01051a;
+      --bg-panel: #0a1540;
+      --bg-card: rgba(10, 21, 64, 0.88);
+
+      --primary: #8b4dff;
+      --primary-light: #a66bff;
+      --primary-dark: #5d2bd6;
+      --purple-soft: #eee7ff;
+      --purple-glow: rgba(139, 77, 255, 0.45);
+      --purple-glow-strong: rgba(139, 77, 255, 0.75);
+
+      --text-white: #ffffff;
+      --text-light: #f3f1ff;
+      --text-soft: #d9d8ec;
+      --text-muted: #a9abc8;
+      --text-dark: #111638;
+      --text-navy: #14194a;
+
+      --border-soft: rgba(255, 255, 255, 0.11);
+      --border-purple: rgba(139, 77, 255, 0.36);
+
+      --shadow-soft: 0 12px 35px rgba(10, 15, 45, 0.12);
+      --shadow-card: 0 10px 30px rgba(20, 25, 74, 0.1);
+      --shadow-purple: 0 0 25px rgba(139, 77, 255, 0.45);
+      --shadow-dark: 0 28px 80px rgba(0, 0, 0, 0.35);
+
+      --radius-card: 18px;
+      --radius-lg: 28px;
+      --radius-pill: 999px;
+
+      --container: 1280px;
+      --transition: all 0.35s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(139, 77, 255, 0.16), transparent 30%),
+        radial-gradient(circle at 85% 5%, rgba(93, 43, 214, 0.22), transparent 30%),
+        linear-gradient(180deg, var(--bg-deep), var(--bg-dark) 40%, var(--bg-navy));
+      color: var(--text-white);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .nf-container,
+    .container {
+      width: min(var(--container), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    /* Header */
+    .nf-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(2, 7, 36, 0.92);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border-soft);
+      transition: var(--transition);
+    }
+
+    .nf-header.nf-scrolled {
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+    }
+
+    .nf-navbar {
+      height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .nf-logo,
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      min-width: max-content;
+    }
+
+    .logo-mark {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 44px;
+      color: var(--primary);
+      text-shadow: var(--shadow-purple);
+      letter-spacing: -3px;
+      line-height: 1;
+    }
+
+    .nf-logo-text,
+    .brand-name {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: var(--text-light);
+    }
+
+    .nf-nav-links {
+      display: flex;
+      align-items: center;
+      gap: 38px;
+    }
+
+    .nf-nav-links a {
+      position: relative;
+      color: var(--text-soft);
+      font-size: 16px;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .nf-nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -16px;
+      width: 0;
+      height: 3px;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(90deg, var(--primary), var(--primary-light));
+      transform: translateX(-50%);
+      transition: var(--transition);
+    }
+
+    .nf-nav-links a:hover,
+    .nf-nav-links a.nf-active {
+      color: var(--primary-light);
+    }
+
+    .nf-nav-links a:hover::after,
+    .nf-nav-links a.nf-active::after {
+      width: 100%;
+    }
+
+    .nf-hire-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 28px;
+      border-radius: 13px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: var(--text-white);
+      font-weight: 700;
+      box-shadow: var(--shadow-purple);
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .nf-hire-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 35px var(--purple-glow-strong);
+    }
+
+    .nf-menu-toggle {
+      width: 46px;
+      height: 46px;
+      display: none;
+      place-items: center;
+      gap: 5px;
+      border: 1px solid var(--border-purple);
+      border-radius: 12px;
+      background: rgba(139, 77, 255, 0.12);
+      cursor: pointer;
+    }
+
+    .nf-menu-toggle span {
+      width: 22px;
+      height: 2px;
+      background: var(--text-white);
+      border-radius: var(--radius-pill);
+      transition: var(--transition);
+    }
+
+    .nf-menu-toggle.nf-open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nf-menu-toggle.nf-open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nf-menu-toggle.nf-open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Hero */
+    .nf-hero {
+      position: relative;
+      min-height: 560px;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-soft);
+      background:
+        radial-gradient(circle at 68% 42%, rgba(139, 77, 255, 0.25), transparent 34%),
+        radial-gradient(circle at 15% 18%, rgba(139, 77, 255, 0.14), transparent 26%),
+        linear-gradient(110deg, var(--bg-dark), var(--bg-navy));
+    }
+
+    .nf-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-radial-gradient(
+          circle at 68% 67%,
+          rgba(166, 107, 255, 0.1) 0 1px,
+          transparent 1px 42px
+        );
+      opacity: 0.55;
+      pointer-events: none;
+    }
+
+    .nf-hero-grid {
+      position: relative;
+      z-index: 2;
+      min-height: 560px;
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      align-items: center;
+      gap: 44px;
+    }
+
+    .nf-hero-content {
+      padding-block: 70px;
+    }
+
+    .nf-eyebrow,
+    .nf-section-heading span {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--primary-light);
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+    }
+
+    .nf-hero-content h1 {
+      margin-bottom: 22px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(52px, 7vw, 84px);
+      line-height: 0.95;
+      color: var(--text-white);
+      text-shadow: 0 0 18px rgba(255, 255, 255, 0.22);
+    }
+
+    .nf-hero-content p {
+      max-width: 560px;
+      color: var(--text-soft);
+      font-size: 19px;
+      line-height: 1.65;
+      font-weight: 500;
+    }
+
+    .nf-hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-top: 34px;
+      flex-wrap: wrap;
+    }
+
+    .nf-btn,
+    .btn {
+      min-height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 15px 32px;
+      border: 0;
+      border-radius: 10px;
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .nf-btn-primary,
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: var(--text-white);
+      box-shadow: var(--shadow-purple);
+    }
+
+    .nf-btn-primary:hover,
+    .btn-primary:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 35px var(--purple-glow-strong);
+    }
+
+    .nf-btn-outline {
+      color: var(--text-light);
+      border: 2px solid rgba(255, 255, 255, 0.45);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .nf-btn-outline:hover {
+      color: var(--text-white);
+      border-color: var(--primary-light);
+      background: rgba(139, 77, 255, 0.16);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-purple);
+    }
+
+    .nf-hero-image-wrap {
+      position: relative;
+      height: 100%;
+      align-self: end;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      min-height: 420px;
+    }
+
+    .nf-hero-image {
+      width: min(620px, 100%);
+      max-height: 540px;
+      object-fit: contain;
+      object-position: bottom right;
+      filter: drop-shadow(0 24px 45px rgba(0, 0, 0, 0.42));
+    }
+
+    .nf-dot-pattern {
+      position: absolute;
+      top: 84px;
+      left: 40px;
+      width: 96px;
+      height: 70px;
+      background-image: radial-gradient(var(--primary) 2px, transparent 3px);
+      background-size: 18px 18px;
+      opacity: 0.45;
+    }
+
+    .nf-hero-bg-shape {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(8px);
+      pointer-events: none;
+    }
+
+    .nf-shape-one {
+      right: 18%;
+      top: 14%;
+      width: 220px;
+      height: 220px;
+      background: rgba(139, 77, 255, 0.1);
+    }
+
+    .nf-shape-two {
+      left: 8%;
+      bottom: 8%;
+      width: 140px;
+      height: 140px;
+      background: rgba(166, 107, 255, 0.08);
+    }
+
+    /* Services */
+    .nf-services-section {
+      padding: 42px 0 70px;
+    }
+
+    .nf-services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .nf-service-card {
+      min-height: 342px;
+      padding: 26px 24px 24px;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-card);
+      background:
+        linear-gradient(145deg, rgba(10, 21, 64, 0.94), rgba(5, 14, 48, 0.86)),
+        var(--bg-card);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nf-service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(139, 77, 255, 0.22), transparent 34%);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .nf-service-card:hover {
+      transform: translateY(-10px);
+      border-color: var(--border-purple);
+      box-shadow: var(--shadow-purple), var(--shadow-dark);
+    }
+
+    .nf-service-card:hover::before {
+      opacity: 1;
+    }
+
+    .nf-service-top,
+    .nf-service-card p,
+    .nf-service-card ul {
+      position: relative;
+      z-index: 2;
+    }
+
+    .nf-service-top {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .nf-service-icon {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: var(--text-white);
+      font-size: 29px;
+      box-shadow: var(--shadow-purple);
+      transition: var(--transition);
+    }
+
+    .nf-service-card:hover .nf-service-icon {
+      transform: scale(1.08) rotate(4deg);
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    }
+
+    .nf-ebay-icon span {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .nf-service-card h2 {
+      color: var(--text-light);
+      font-size: 21px;
+      line-height: 1.35;
+      font-weight: 800;
+    }
+
+    .nf-service-card p {
+      min-height: 88px;
+      margin-bottom: 18px;
+      color: var(--text-soft);
+      font-size: 15px;
+      line-height: 1.65;
+      font-weight: 500;
+    }
+
+    .nf-service-card li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 10px;
+      color: var(--text-soft);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nf-service-card li i {
+      margin-top: 2px;
+      color: var(--primary-light);
+      font-size: 17px;
+      filter: drop-shadow(0 0 6px var(--purple-glow));
+    }
+
+    /* Process */
+    .nf-process-section {
+      padding: 24px 0 70px;
+    }
+
+    .nf-section-heading {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .nf-section-heading h2 {
+      display: inline-block;
+      position: relative;
+      font-size: clamp(32px, 4vw, 44px);
+      line-height: 1.1;
+      color: var(--text-light);
+    }
+
+    .nf-section-heading h2::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -13px;
+      width: 54px;
+      height: 4px;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(90deg, var(--primary), var(--primary-light));
+      transform: translateX(-50%);
+      box-shadow: var(--shadow-purple);
+    }
+
+    .nf-process-track {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 24px;
+      padding: 10px 0 34px;
+    }
+
+    .nf-process-track::before {
+      content: "";
+      position: absolute;
+      top: 44px;
+      left: 7%;
+      right: 7%;
+      border-top: 2px dotted rgba(139, 77, 255, 0.35);
+    }
+
+    .nf-process-step {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 66px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .nf-process-icon {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: var(--text-white);
+      font-size: 24px;
+      box-shadow: var(--shadow-purple);
+      transition: var(--transition);
+    }
+
+    .nf-process-step:hover .nf-process-icon {
+      transform: translateY(-7px) scale(1.06);
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    }
+
+    .nf-step-number {
+      display: inline-block;
+      margin-bottom: 3px;
+      color: var(--text-soft);
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    .nf-process-step h3 {
+      margin-bottom: 8px;
+      color: var(--text-light);
+      font-size: 21px;
+      line-height: 1;
+    }
+
+    .nf-process-step p {
+      max-width: 170px;
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.55;
+      font-weight: 500;
+    }
+
+    .nf-project-cta {
+      margin-top: 38px;
+      padding: 34px 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      border: 1px solid var(--border-soft);
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at 8% 50%, rgba(139, 77, 255, 0.2), transparent 20%),
+        linear-gradient(135deg, rgba(10, 21, 64, 0.96), rgba(5, 14, 48, 0.9));
+      box-shadow: var(--shadow-dark);
+      transition: var(--transition);
+    }
+
+    .nf-project-cta:hover {
+      border-color: var(--border-purple);
+      box-shadow: var(--shadow-purple), var(--shadow-dark);
+      transform: translateY(-4px);
+    }
+
+    .nf-cta-left {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nf-cta-icon {
+      width: 82px;
+      height: 82px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 82px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
+      color: var(--text-white);
+      font-size: 36px;
+      box-shadow: var(--shadow-purple);
+    }
+
+    .nf-project-cta h2 {
+      color: var(--text-light);
+      font-size: clamp(26px, 3vw, 38px);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .nf-project-cta p {
+      color: var(--text-soft);
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    /* Footer */
+    .footer {
+      color: var(--text-white);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(139, 77, 255, 0.13), transparent 28%),
+        linear-gradient(135deg, var(--bg-deep), #03103a 55%, var(--bg-deep));
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.45fr 1.15fr 1fr 1.1fr;
+      gap: 34px;
+      padding: 42px 0 34px;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact,
+    .footer-cta {
+      min-width: 0;
+      position: relative;
+    }
+
+    .footer-about:not(:last-child)::after,
+    .footer-links:not(:last-child)::after,
+    .footer-contact:not(:last-child)::after {
+      content: "";
+      width: 1px;
+      height: 135px;
+      background: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      right: -17px;
+      top: 16px;
+    }
+
+    .footer-brand {
+      margin-bottom: 12px;
+    }
+
+    .footer-brand .logo-mark {
+      font-size: 42px;
+    }
+
+    .footer-brand .brand-name {
+      font-size: 25px;
+    }
+
+    .footer-about p,
+    .footer-cta p {
+      color: rgba(255, 255, 255, 0.79);
+      max-width: 340px;
+      font-size: 0.98rem;
+      line-height: 1.55;
+      font-weight: 500;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 16px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--text-white);
+      border: 2px solid rgba(255, 255, 255, 0.74);
+      transition: var(--transition);
+    }
+
+    .social-links a:hover {
+      border-color: var(--primary);
+      background: var(--primary);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-purple);
+    }
+
+    .footer-links h3,
+    .footer-contact h3,
+    .footer-cta h3 {
+      font-size: 1.18rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .footer-link-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 24px;
+    }
+
+    .footer-link-columns ul,
+    .contact-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .footer-links a,
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255, 255, 255, 0.82);
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--primary-light);
+      transform: translateX(4px);
+    }
+
+    .footer-links i {
+      font-size: 0.75rem;
+    }
+
+    .contact-list i {
+      color: rgba(255, 255, 255, 0.88);
+      width: 28px;
+      height: 28px;
+      font-size: 1.2rem;
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 28px;
+    }
+
+    .footer-cta .btn {
+      margin-top: 18px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 17px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .footer-bottom p {
+      color: rgba(255, 255, 255, 0.78);
+      font-weight: 600;
+    }
+
+    /* Reveal Animation */
+    .nf-reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.75s ease, transform 0.75s ease;
+    }
+
+    .nf-reveal.nf-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 1180px) {
+      .nf-nav-links {
+        gap: 24px;
+      }
+
+      .nf-services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .nf-process-track {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        row-gap: 34px;
+      }
+
+      .nf-process-track::before {
+        display: none;
+      }
+
+      .nf-process-step {
+        padding: 20px;
+        border: 1px solid var(--border-soft);
+        border-radius: var(--radius-card);
+        background: rgba(10, 21, 64, 0.62);
+      }
+
+      .nf-process-step p {
+        max-width: 100%;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .footer-about::after,
+      .footer-links::after,
+      .footer-contact::after {
+        display: none;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .nf-navbar {
+        height: 76px;
+      }
+
+      .nf-menu-toggle {
+        display: grid;
+      }
+
+      .nf-nav-links {
+        position: absolute;
+        top: 76px;
+        left: 20px;
+        right: 20px;
+        display: grid;
+        gap: 0;
+        padding: 16px;
+        border: 1px solid var(--border-purple);
+        border-radius: 16px;
+        background: rgba(2, 7, 36, 0.98);
+        box-shadow: var(--shadow-dark);
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: var(--transition);
+      }
+
+      .nf-nav-links.nf-show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      .nf-nav-links li a {
+        display: block;
+        padding: 14px 12px;
+      }
+
+      .nf-nav-links a::after {
+        display: none;
+      }
+
+      .nf-hire-btn {
+        display: none;
+      }
+
+      .nf-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        min-height: auto;
+        padding-top: 28px;
+      }
+
+      .nf-hero-content {
+        padding-block: 44px 18px;
+      }
+
+      .nf-hero-content p {
+        margin-inline: auto;
+      }
+
+      .nf-hero-actions {
+        justify-content: center;
+      }
+
+      .nf-hero-image-wrap {
+        justify-content: center;
+        min-height: auto;
+      }
+
+      .nf-hero-image {
+        max-height: 430px;
+        object-position: center bottom;
+      }
+
+      .nf-dot-pattern {
+        display: none;
+      }
+
+      .nf-services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .nf-project-cta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nf-container,
+      .container {
+        width: min(100% - 28px, var(--container));
+      }
+
+      .logo-mark {
+        font-size: 38px;
+      }
+
+      .nf-logo-text,
+      .brand-name {
+        font-size: 22px;
+      }
+
+      .nf-hero {
+        min-height: auto;
+      }
+
+      .nf-hero-content h1 {
+        font-size: 52px;
+      }
+
+      .nf-hero-content p {
+        font-size: 16px;
+      }
+
+      .nf-hero-actions {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nf-btn,
+      .btn {
+        width: 100%;
+        padding-inline: 20px;
+      }
+
+      .nf-services-section {
+        padding-top: 28px;
+      }
+
+      .nf-services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nf-service-card {
+        min-height: auto;
+      }
+
+      .nf-service-card p {
+        min-height: auto;
+      }
+
+      .nf-process-track {
+        grid-template-columns: 1fr;
+        padding-inline: 0;
+      }
+
+      .nf-project-cta {
+        padding: 26px 22px;
+      }
+
+      .nf-cta-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-link-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-cta .btn {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .nf-hero-content h1 {
+        font-size: 44px;
+      }
+
+      .nf-eyebrow,
+      .nf-section-heading span {
+        font-size: 14px;
+      }
+
+      .nf-service-top {
+        grid-template-columns: 58px 1fr;
+        gap: 14px;
+      }
+
+      .nf-service-icon {
+        width: 54px;
+        height: 54px;
+        font-size: 24px;
+      }
+
+      .nf-service-card h2 {
+        font-size: 19px;
+      }
+
+      .nf-process-step {
+        grid-template-columns: 58px 1fr;
+      }
+
+      .nf-process-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 22px;
+      }
+
+      .nf-project-cta p {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="nf-header" id="top">
+    <nav class="nf-navbar nf-container" aria-label="Main navigation">
+      <a href="index.html" class="nf-logo" aria-label="Noor Fiza home">
+        <span class="logo-mark">NF</span>
+        <span class="nf-logo-text">Noor Fiza</span>
+      </a>
+
+      <button class="nf-menu-toggle" id="nfMenuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nf-nav-links" id="nfNavLinks">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="index.html" class="nf-active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <a href="https://about.me/noorhameed" target="_blank" rel="noopener noreferrer" class="nf-hire-btn">
+        Hire Me <i class="fa-solid fa-angle-right"></i>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="nf-hero" id="services">
+      <div class="nf-hero-bg-shape nf-shape-one"></div>
+      <div class="nf-hero-bg-shape nf-shape-two"></div>
+
+      <div class="nf-container nf-hero-grid">
+        <div class="nf-hero-content nf-reveal">
+          <span class="nf-eyebrow">What I Offer</span>
+          <h1>My Services</h1>
+          <p>
+            I provide end-to-end digital solutions to help businesses grow,
+            attract, and convert. From development to marketing and management,
+            I’ve got you covered.
+          </p>
+
+          <div class="nf-hero-actions">
+            <a href="project.html" class="nf-btn nf-btn-primary">
+              View Projects <i class="fa-solid fa-angle-right"></i>
+            </a>
+            <a href="contact.html" class="nf-btn nf-btn-outline">
+              Contact Me <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="nf-hero-image-wrap nf-reveal">
+          <div class="nf-dot-pattern" aria-hidden="true"></div>
+          <img
+            src="image/fiza.png"
+            alt="Noor Fiza working on a laptop and offering professional digital services"
+            class="nf-hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Cards -->
+    <section class="nf-services-section" aria-label="Services list">
+      <div class="nf-container">
+        <div class="nf-services-grid">
+          <article class="nf-service-card nf-reveal">
+            <div class="nf-service-top">
+              <div class="nf-service-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <h2>E-commerce Solutions</h2>
+            </div>
+            <p>
+              Building and managing e-commerce stores that convert visitors into
+              loyal customers.
+            </p>
+            <ul>
+              <li><i class="fa-regular fa-circle-check"></i>Store Setup &amp; Customization</li>
+              <li><i class="fa-regular fa-circle-check"></i>Product Management</li>
+              <li><i class="fa-regular fa-circle-check"></i>Payment Gateway Integration</li>
+              <li><i class="fa-regular fa-circle-check"></i>SEO Optimized Store</li>
+              <li><i class="fa-regular fa-circle-check"></i>Ongoing Support</li>
+            </ul>
+          </article>
+
+          <article class="nf-service-card nf-reveal">
+            <div class="nf-service-top">
+              <div class="nf-service-icon">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+              <h2>Digital Marketing</h2>
+            </div>
+            <p>
+              Data-driven strategies that boost online visibility, traffic, and
+              sales through result-oriented campaigns.
+            </p>
+            <ul>
+              <li><i class="fa-regular fa-circle-check"></i>Social Media Marketing</li>
+              <li><i class="fa-regular fa-circle-check"></i>Google Ads / PPC</li>
+              <li><i class="fa-regular fa-circle-check"></i>SEO &amp; Keyword Research</li>
+              <li><i class="fa-regular fa-circle-check"></i>Email Marketing</li>
+              <li><i class="fa-regular fa-circle-check"></i>Analytics &amp; Reporting</li>
+            </ul>
+          </article>
+
+          <article class="nf-service-card nf-reveal">
+            <div class="nf-service-top">
+              <div class="nf-service-icon nf-ebay-icon">
+                <span>eBay</span>
+              </div>
+              <h2>eBay Store Management</h2>
+            </div>
+            <p>
+              From product listing to order handling, I manage eBay stores for
+              better visibility and sales.
+            </p>
+            <ul>
+              <li><i class="fa-regular fa-circle-check"></i>Store Setup &amp; Optimization</li>
+              <li><i class="fa-regular fa-circle-check"></i>Product Listing &amp; SEO</li>
+              <li><i class="fa-regular fa-circle-check"></i>Order Processing</li>
+              <li><i class="fa-regular fa-circle-check"></i>Customer Support</li>
+              <li><i class="fa-regular fa-circle-check"></i>Performance Tracking</li>
+            </ul>
+          </article>
+
+          <article class="nf-service-card nf-reveal">
+            <div class="nf-service-top">
+              <div class="nf-service-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h2>Frontend Development</h2>
+            </div>
+            <p>
+              Creating responsive, user-friendly websites using modern
+              technologies for a seamless experience.
+            </p>
+            <ul>
+              <li><i class="fa-regular fa-circle-check"></i>HTML5, CSS3, JavaScript</li>
+              <li><i class="fa-regular fa-circle-check"></i>Bootstrap &amp; Tailwind CSS</li>
+              <li><i class="fa-regular fa-circle-check"></i>Responsive Design</li>
+              <li><i class="fa-regular fa-circle-check"></i>Cross-Browser Compatibility</li>
+              <li><i class="fa-regular fa-circle-check"></i>Performance Optimization</li>
+            </ul>
+          </article>
+
+          <article class="nf-service-card nf-reveal">
+            <div class="nf-service-top">
+              <div class="nf-service-icon">
+                <i class="fa-brands fa-wordpress"></i>
+              </div>
+              <h2>WordPress Development</h2>
+            </div>
+            <p>
+              Designing and developing powerful WordPress websites with custom
+              themes and plugins.
+            </p>
+            <ul>
+              <li><i class="fa-regular fa-circle-check"></i>Custom Theme Development</li>
+              <li><i class="fa-regular fa-circle-check"></i>Plugin Customization</li>
+              <li><i class="fa-regular fa-circle-check"></i>Website Redesign</li>
+              <li><i class="fa-regular fa-circle-check"></i>Speed Optimization</li>
+              <li><i class="fa-regular fa-circle-check"></i>Maintenance &amp; Support</li>
+            </ul>
+          </article>
+
+          <article class="nf-service-card nf-reveal">
+            <div class="nf-service-top">
+              <div class="nf-service-icon">
+                <i class="fa-solid fa-film"></i>
+              </div>
+              <h2>Video Editing</h2>
+            </div>
+            <p>
+              Creating engaging videos that tell your brand story and leave a
+              lasting impact on your audience.
+            </p>
+            <ul>
+              <li><i class="fa-regular fa-circle-check"></i>YouTube Video Editing</li>
+              <li><i class="fa-regular fa-circle-check"></i>Social Media Videos</li>
+              <li><i class="fa-regular fa-circle-check"></i>Promotional Videos</li>
+              <li><i class="fa-regular fa-circle-check"></i>Transitions &amp; Effects</li>
+              <li><i class="fa-regular fa-circle-check"></i>Color Grading</li>
+            </ul>
+          </article>
+
+          <article class="nf-service-card nf-reveal">
+            <div class="nf-service-top">
+              <div class="nf-service-icon">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <h2>ACCA Study &amp; Accounting Knowledge</h2>
+            </div>
+            <p>
+              Strengthening my financial and business knowledge through ACCA
+              studies.
+            </p>
+            <ul>
+              <li><i class="fa-regular fa-circle-check"></i>Financial Accounting</li>
+              <li><i class="fa-regular fa-circle-check"></i>Management Accounting</li>
+              <li><i class="fa-regular fa-circle-check"></i>Taxation</li>
+              <li><i class="fa-regular fa-circle-check"></i>Audit &amp; Assurance</li>
+              <li><i class="fa-regular fa-circle-check"></i>Business &amp; Ethics</li>
+            </ul>
+          </article>
+
+          <article class="nf-service-card nf-reveal">
+            <div class="nf-service-top">
+              <div class="nf-service-icon">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <h2>Virtual Assistant &amp; Admin Support</h2>
+            </div>
+            <p>
+              Providing reliable administrative support to help you focus on what
+              matters most.
+            </p>
+            <ul>
+              <li><i class="fa-regular fa-circle-check"></i>Data Entry</li>
+              <li><i class="fa-regular fa-circle-check"></i>Email Management</li>
+              <li><i class="fa-regular fa-circle-check"></i>Calendar &amp; Scheduling</li>
+              <li><i class="fa-regular fa-circle-check"></i>File Management</li>
+              <li><i class="fa-regular fa-circle-check"></i>Research &amp; Reporting</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Process -->
+    <section class="nf-process-section" id="work-process">
+      <div class="nf-container">
+        <div class="nf-section-heading nf-reveal">
+          <span>My Work Process</span>
+          <h2>How I Work</h2>
+        </div>
+
+        <div class="nf-process-track nf-reveal">
+          <article class="nf-process-step">
+            <div class="nf-process-icon">
+              <i class="fa-regular fa-message"></i>
+            </div>
+            <div>
+              <span class="nf-step-number">01</span>
+              <h3>Discuss</h3>
+              <p>Understanding your requirements and goals.</p>
+            </div>
+          </article>
+
+          <article class="nf-process-step">
+            <div class="nf-process-icon">
+              <i class="fa-regular fa-pen-to-square"></i>
+            </div>
+            <div>
+              <span class="nf-step-number">02</span>
+              <h3>Plan</h3>
+              <p>Creating a strategy and action plan.</p>
+            </div>
+          </article>
+
+          <article class="nf-process-step">
+            <div class="nf-process-icon">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <div>
+              <span class="nf-step-number">03</span>
+              <h3>Implement</h3>
+              <p>Working on the plan with best practices.</p>
+            </div>
+          </article>
+
+          <article class="nf-process-step">
+            <div class="nf-process-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div>
+              <span class="nf-step-number">04</span>
+              <h3>Deliver</h3>
+              <p>Delivering quality work on time.</p>
+            </div>
+          </article>
+
+          <article class="nf-process-step">
+            <div class="nf-process-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <div>
+              <span class="nf-step-number">05</span>
+              <h3>Support</h3>
+              <p>Providing ongoing support for continued success.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="nf-project-cta nf-reveal">
+          <div class="nf-cta-left">
+            <div class="nf-cta-icon">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+            <div>
+              <h2>Have a Project in Mind?</h2>
+              <p>Let’s work together to bring your ideas to life.</p>
+            </div>
+          </div>
+
+          <a href="contact.html" class="nf-btn nf-btn-primary">
+            Get In Touch <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="footer-brand" aria-label="Noor Fiza home">
+          <span class="logo-mark">NF</span>
+          <span class="brand-name">Noor Fiza</span>
+        </a>
+        <p>
+          Helping businesses grow online with creative solutions in web development,
+          digital marketing, e-commerce, and video editing.
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/noorfizahm" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/noorfiza6h/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/noorfiz6h/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NoorFiza6h" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.upwork.com/freelancers/~016490fe7ae7784b66?viewMode=1" target="_blank" rel="noopener noreferrer" aria-label="Upwork"><i class="fa-brands fa-upwork"></i></a>
+
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <div class="footer-link-columns">
+          <ul>
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="About.html"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+            <li><a href="skill.html"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+          </ul>
+          <ul>
+            <li><a href="project.html"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <ul class="contact-list">
+          <li><i class="fa-regular fa-envelope"></i> noorfiza6h@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +92 3236556906</li>
+          <li><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</li>
+        </ul>
+      </div>
+
+      <div class="footer-cta">
+        <h3>Let's Work Together</h3>
+        <p>Have a project in mind? I'd love to hear about it.</p>
+        <a href="contact.html" class="btn btn-primary">
+          Let's Work Together <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="nfYear">2026</span> Noor Fiza. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const nfMenuToggle = document.getElementById("nfMenuToggle");
+    const nfNavLinks = document.getElementById("nfNavLinks");
+    const nfHeader = document.querySelector(".nf-header");
+    const nfYear = document.getElementById("nfYear");
+
+    if (nfYear) {
+      nfYear.textContent = new Date().getFullYear();
+    }
+
+    if (nfMenuToggle && nfNavLinks) {
+      nfMenuToggle.addEventListener("click", () => {
+        const isOpen = nfMenuToggle.classList.toggle("nf-open");
+        nfNavLinks.classList.toggle("nf-show", isOpen);
+        nfMenuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      document.querySelectorAll(".nf-nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          nfMenuToggle.classList.remove("nf-open");
+          nfNavLinks.classList.remove("nf-show");
+          nfMenuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        const clickedInsideMenu = nfNavLinks.contains(event.target);
+        const clickedToggle = nfMenuToggle.contains(event.target);
+
+        if (!clickedInsideMenu && !clickedToggle) {
+          nfMenuToggle.classList.remove("nf-open");
+          nfNavLinks.classList.remove("nf-show");
+          nfMenuToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", () => {
+      if (!nfHeader) return;
+
+      if (window.scrollY > 20) {
+        nfHeader.classList.add("nf-scrolled");
+      } else {
+        nfHeader.classList.remove("nf-scrolled");
+      }
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (event) {
+        const targetId = this.getAttribute("href");
+
+        if (!targetId || targetId === "#") return;
+
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          event.preventDefault();
+
+          const headerHeight = nfHeader ? nfHeader.offsetHeight : 0;
+          const targetPosition =
+            targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+
+    const revealElements = document.querySelectorAll(".nf-reveal");
+
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("nf-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      revealElements.forEach((element) => {
+        revealObserver.observe(element);
+      });
+    } else {
+      revealElements.forEach((element) => {
+        element.classList.add("nf-visible");
+      });
+    }
+  </script>
+</body>
+</html>

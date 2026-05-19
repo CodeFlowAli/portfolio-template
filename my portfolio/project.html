@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Noor Fiza | Projects & Portfolio</title>
+  <meta
+    name="description"
+    content="Explore Noor Fiza's portfolio projects in WordPress development, e-commerce, digital marketing, eBay store management, frontend development, video editing, and ACCA professional growth."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet"
+  />
+<link rel="shortcut icon" href="image/NOOR FIZA.png" type="image/x-icon">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+    :root {
+  --bg-dark: #020724;
+  --bg-navy: #061037;
+  --bg-deep: #01051a;
+  --bg-panel: #0a1540;
+
+  --primary: #8b4dff;
+  --primary-light: #a66bff;
+  --primary-dark: #5d2bd6;
+  --purple-soft: #eee7ff;
+  --purple-glow: rgba(139, 77, 255, 0.45);
+
+  --text-white: #ffffff;
+  --text-light: #f3f1ff;
+  --text-dark: #111638;
+  --text-navy: #14194a;
+  --text-muted: #6b6f8a;
+
+  --card-bg: #ffffff;
+  --section-soft: #f5f0ff;
+  --section-lavender: #f1eaff;
+  --border-soft: #e6e0f5;
+  --border-dark: rgba(255, 255, 255, 0.12);
+
+  --shadow-soft: 0 12px 35px rgba(10, 15, 45, 0.12);
+  --shadow-card: 0 10px 30px rgba(20, 25, 74, 0.10);
+  --shadow-purple: 0 0 25px rgba(139, 77, 255, 0.45);
+
+  --radius-card: 18px;
+  --radius-lg: 28px;
+  --transition: all 0.35s ease;
+
+  --font-main: "Inter", sans-serif;
+  --font-heading: "Playfair Display", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--text-white);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.nf-project-container {
+  width: min(1420px, 90%);
+  margin: 0 auto;
+}
+
+/* Header */
+.nf-project-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(2, 7, 36, 0.96);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.nf-project-navbar {
+  width: min(1620px, 90%);
+  height: 84px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nf-project-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-white);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.logo-mark {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 44px;
+  color: var(--primary);
+  text-shadow: var(--shadow-purple);
+  letter-spacing: -3px;
+}
+.nf-project-navlinks {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  list-style: none;
+}
+
+.nf-project-navlinks a {
+  color: var(--text-light);
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nf-project-navlinks a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  width: 0;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 999px;
+  transform: translateX(-50%);
+  transition: var(--transition);
+}
+
+.nf-project-navlinks a:hover,
+.nf-project-navlinks a.active {
+  color: var(--primary-light);
+}
+
+.nf-project-navlinks a:hover::after,
+.nf-project-navlinks a.active::after {
+  width: 100%;
+}
+
+.nf-project-hire-btn,
+.nf-project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.nf-project-hire-btn {
+  color: var(--text-white);
+  padding: 14px 28px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  box-shadow: var(--shadow-purple);
+}
+
+.nf-project-hire-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px var(--purple-glow);
+}
+
+.nf-project-menu-btn {
+  display: none;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--border-dark);
+  border-radius: 12px;
+  color: var(--text-white);
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Hero */
+.nf-project-hero {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 38%, rgba(139, 77, 255, 0.35), transparent 34%),
+    radial-gradient(circle at 12% 20%, rgba(93, 43, 214, 0.22), transparent 30%),
+    linear-gradient(135deg, var(--bg-deep), var(--bg-dark) 48%, var(--bg-navy));
+}
+
+.nf-project-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 70px;
+  background: var(--text-white);
+  clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.nf-project-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0 70px;
+}
+
+.nf-project-eyebrow {
+  color: var(--primary-light);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.nf-project-hero-content h1 {
+  font-family: var(--font-heading);
+  color: var(--text-white);
+  font-size: clamp(46px, 5.4vw, 72px);
+  line-height: 1.02;
+  margin-bottom: 20px;
+}
+
+.nf-project-hero-text {
+  max-width: 660px;
+  color: var(--text-light);
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.92;
+}
+
+.nf-project-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.nf-project-btn {
+  min-height: 56px;
+  padding: 16px 28px;
+  font-size: 17px;
+}
+
+.nf-project-btn-primary {
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  box-shadow: var(--shadow-purple);
+}
+
+.nf-project-btn-primary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 38px var(--purple-glow);
+}
+
+.nf-project-btn-outline {
+  color: var(--text-white);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.nf-project-btn-outline:hover {
+  border-color: var(--primary-light);
+  background: rgba(139, 77, 255, 0.16);
+  transform: translateY(-5px);
+}
+
+.nf-project-value-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.nf-project-value-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 16px;
+  border: 1px solid var(--border-dark);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.035);
+  transition: var(--transition);
+}
+
+.nf-project-value-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-purple);
+}
+
+.nf-project-value-card i {
+  color: var(--primary-light);
+  font-size: 30px;
+  filter: drop-shadow(0 0 10px var(--purple-glow));
+}
+
+.nf-project-value-card h3 {
+  color: var(--text-white);
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.nf-project-value-card p {
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+
+.nf-project-hero-image-wrap {
+  position: relative;
+  min-height: 510px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.nf-project-hero-img {
+  position: relative;
+  z-index: 2;
+  max-height: 590px;
+  object-fit: contain;
+  filter: drop-shadow(0 30px 45px rgba(0, 0, 0, 0.35));
+}
+
+.nf-project-orbit {
+  position: absolute;
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  border: 1px solid rgba(166, 107, 255, 0.12);
+  box-shadow:
+    inset 0 0 0 28px rgba(166, 107, 255, 0.03),
+    inset 0 0 0 58px rgba(166, 107, 255, 0.025),
+    0 0 90px rgba(139, 77, 255, 0.24);
+}
+
+.nf-project-hero-pattern {
+  position: absolute;
+  width: 90px;
+  height: 60px;
+  background-image: radial-gradient(var(--primary) 2px, transparent 2px);
+  background-size: 18px 18px;
+  opacity: 0.38;
+}
+
+.nf-pattern-left {
+  top: 118px;
+  left: 46%;
+}
+
+.nf-pattern-right {
+  right: 6%;
+  bottom: 50px;
+}
+
+/* Section Heading */
+.nf-project-featured {
+  padding: 28px 0 40px;
+  background: linear-gradient(180deg, var(--text-white), #fbfaff);
+}
+
+.nf-project-section-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.nf-project-section-heading h2 {
+  color: var(--text-navy);
+  font-size: clamp(32px, 4vw, 42px);
+  line-height: 1.15;
+}
+
+.nf-project-section-heading span {
+  width: 44px;
+  height: 4px;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 999px;
+  background: var(--primary);
+}
+
+/* Filters */
+.nf-project-filter-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.nf-project-filter {
+  min-width: 130px;
+  padding: 13px 24px;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  background: var(--card-bg);
+  color: var(--text-dark);
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 6px 16px rgba(20, 25, 74, 0.05);
+}
+
+.nf-project-filter:hover,
+.nf-project-filter.active {
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  box-shadow: var(--shadow-purple);
+  transform: translateY(-4px);
+}
+
+/* Project Cards */
+.nf-project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.nf-project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-card);
+  padding: 12px;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+}
+
+.nf-project-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-light);
+  box-shadow: 0 18px 45px rgba(139, 77, 255, 0.20);
+}
+
+.nf-project-thumb {
+  height: 148px;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nf-project-card-body {
+  padding: 18px 8px 8px;
+}
+
+.nf-project-card-category {
+  color: var(--primary-dark);
+  font-weight: 900;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.nf-project-card-category i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.nf-project-card h3 {
+  color: var(--text-navy);
+  font-size: 21px;
+  line-height: 1.28;
+  margin-bottom: 10px;
+}
+
+.nf-project-card p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+
+.nf-project-card small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.nf-project-view-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  font-weight: 900;
+  transition: var(--transition);
+}
+
+.nf-project-view-link:hover {
+  color: var(--primary-dark);
+  gap: 16px;
+}
+
+/* Thumbnail Designs */
+.nf-thumb-wordpress {
+  justify-content: flex-start;
+  padding: 24px;
+  color: var(--text-white);
+  background:
+    linear-gradient(rgba(2, 7, 36, 0.55), rgba(2, 7, 36, 0.72)),
+    linear-gradient(135deg, #17345e, #061037);
+}
+
+.nf-thumb-wordpress strong,
+.nf-thumb-wordpress span {
+  display: block;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.nf-thumb-ecommerce {
+  justify-content: flex-start;
+  padding: 24px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.25), transparent),
+    linear-gradient(135deg, #d8c5b6, #f6f2ee);
+}
+
+.nf-thumb-ecommerce strong,
+.nf-thumb-ecommerce span {
+  display: block;
+  color: var(--text-navy);
+}
+
+.nf-thumb-marketing {
+  gap: 24px;
+  background:
+    radial-gradient(circle at 20% 40%, rgba(166, 107, 255, 0.45), transparent 28%),
+    linear-gradient(135deg, var(--bg-navy), var(--primary-dark));
+}
+
+.nf-thumb-marketing i {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  color: var(--text-white);
+  font-size: 28px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-purple);
+}
+
+.nf-thumb-ebay {
+  flex-direction: column;
+  gap: 18px;
+  background: linear-gradient(135deg, #ffffff, #f0f3ff);
+  border: 1px solid var(--border-soft);
+}
+
+.nf-ebay-logo {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: var(--primary);
+}
+
+.nf-mini-chart {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  background:
+    linear-gradient(to top, var(--primary) 60%, transparent 60%) 10px 0 / 16px 100% no-repeat,
+    linear-gradient(to top, var(--primary-light) 75%, transparent 75%) 42px 0 / 16px 100% no-repeat,
+    linear-gradient(to top, var(--primary-dark) 45%, transparent 45%) 74px 0 / 16px 100% no-repeat,
+    linear-gradient(to top, var(--primary) 82%, transparent 82%) 106px 0 / 16px 100% no-repeat;
+}
+
+.nf-thumb-frontend {
+  background:
+    radial-gradient(circle at 70% 40%, rgba(139, 77, 255, 0.55), transparent 28%),
+    linear-gradient(135deg, var(--bg-dark), #1c0b5f);
+}
+
+.nf-code-window {
+  width: 72%;
+  height: 78px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid var(--border-dark);
+  padding: 18px;
+}
+
+.nf-code-window span {
+  display: block;
+  height: 8px;
+  margin-bottom: 10px;
+  border-radius: 999px;
+  background: var(--primary-light);
+}
+
+.nf-code-window span:nth-child(2) {
+  width: 75%;
+}
+
+.nf-code-window span:nth-child(3) {
+  width: 55%;
+}
+
+.nf-thumb-video {
+  flex-direction: column;
+  gap: 18px;
+  background:
+    linear-gradient(rgba(2, 7, 36, 0.10), rgba(2, 7, 36, 0.55)),
+    linear-gradient(135deg, #29384d, #030a22);
+}
+
+.nf-thumb-video i {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--text-white);
+  background: var(--primary);
+  box-shadow: var(--shadow-purple);
+}
+
+.nf-video-line {
+  width: 70%;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light), var(--primary-dark));
+}
+
+.nf-thumb-acca {
+  background:
+    radial-gradient(circle at 72% 18%, rgba(139, 77, 255, 0.18), transparent 28%),
+    linear-gradient(135deg, #c9a482, #f3eadf);
+}
+
+.nf-acca-badge {
+  padding: 18px 28px;
+  background: #e52835;
+  color: var(--text-white);
+  font-size: 30px;
+  font-weight: 900;
+  border-radius: 8px;
+}
+
+.nf-thumb-portfolio {
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text-white);
+  background:
+    radial-gradient(circle at 78% 30%, rgba(166, 107, 255, 0.55), transparent 32%),
+    linear-gradient(135deg, var(--bg-deep), var(--bg-navy));
+}
+
+.nf-thumb-portfolio span {
+  color: var(--primary-light);
+  font-family: cursive;
+  font-size: 42px;
+}
+
+.nf-thumb-portfolio strong {
+  font-size: 26px;
+}
+
+/* Stats */
+.nf-project-stats-section {
+  padding: 22px 0;
+}
+
+.nf-project-stats-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 2px solid rgba(139, 77, 255, 0.20);
+  border-radius: var(--radius-card);
+  background: var(--card-bg);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.nf-project-stat {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 34px 36px;
+  border-right: 1px solid var(--border-soft);
+  transition: var(--transition);
+}
+
+.nf-project-stat:last-child {
+  border-right: none;
+}
+
+.nf-project-stat:hover {
+  background: var(--section-soft);
+}
+
+.nf-project-stat-icon {
+  width: 82px;
+  height: 82px;
+  flex: 0 0 82px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  color: var(--primary-dark);
+  background: linear-gradient(135deg, var(--purple-soft), var(--section-lavender));
+  font-size: 36px;
+}
+
+.nf-project-stat h3 {
+  color: var(--primary-dark);
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.nf-project-stat h4 {
+  color: var(--primary-dark);
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.nf-project-stat p {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/* CTA */
+.nf-project-cta-section {
+  padding: 18px 0 46px;
+}
+
+.nf-project-cta {
+  min-height: 130px;
+  padding: 28px 44px;
+  border-radius: var(--radius-card);
+  background:
+    radial-gradient(circle at 18% 40%, rgba(139, 77, 255, 0.30), transparent 24%),
+    radial-gradient(circle at 90% 58%, rgba(139, 77, 255, 0.18), transparent 24%),
+    linear-gradient(135deg, var(--bg-deep), var(--bg-navy));
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 28px;
+  box-shadow: var(--shadow-card);
+}
+
+.nf-project-cta-icon {
+  width: 88px;
+  height: 88px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  border: 3px solid rgba(255, 255, 255, 0.55);
+  font-size: 36px;
+  box-shadow: var(--shadow-purple);
+}
+
+.nf-project-cta-text h2 {
+  color: var(--text-white);
+  font-size: clamp(28px, 4vw, 38px);
+  margin-bottom: 8px;
+}
+
+.nf-project-cta-text p {
+  color: var(--text-light);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.nf-project-footer {
+  background:
+    radial-gradient(circle at 12% 20%, rgba(139, 77, 255, 0.20), transparent 25%),
+    linear-gradient(135deg, var(--bg-deep), var(--bg-navy));
+  color: var(--text-white);
+}
+
+.nf-project-footer-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1.1fr 1.05fr 1.1fr;
+  gap: 48px;
+  padding: 52px 0;
+}
+
+.nf-footer-brand {
+  margin-bottom: 20px;
+}
+
+.nf-project-footer-about p,
+.nf-project-footer-work p {
+  color: var(--text-light);
+  line-height: 1.8;
+  opacity: 0.86;
+  max-width: 360px;
+}
+
+.nf-project-socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.nf-project-socials a {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--text-white);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  transition: var(--transition);
+}
+
+.nf-project-socials a:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: var(--shadow-purple);
+}
+
+.nf-project-footer h3 {
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+.nf-project-footer-link-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 34px;
+}
+
+.nf-project-footer-link-grid a {
+  color: var(--text-light);
+  transition: var(--transition);
+}
+
+.nf-project-footer-link-grid a:hover {
+  color: var(--primary-light);
+  transform: translateX(6px);
+}
+
+.nf-project-footer-link-grid i {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.nf-project-footer-contact p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.nf-project-footer-contact i {
+  width: 26px;
+  color: var(--primary-light);
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.nf-project-footer-work .nf-project-btn {
+  margin-top: 20px;
+}
+
+.nf-project-copyright {
+  text-align: center;
+  padding: 26px 0;
+  color: var(--text-light);
+  border-top: 1px solid var(--border-dark);
+  opacity: 0.82;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .nf-project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nf-project-stats-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nf-project-stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .nf-project-stat:nth-child(1),
+  .nf-project-stat:nth-child(2) {
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .nf-project-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .nf-project-menu-btn {
+    display: grid;
+    place-items: center;
+  }
+
+  .nf-project-navlinks {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: rgba(2, 7, 36, 0.98);
+    border-top: 1px solid var(--border-dark);
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+
+  .nf-project-navlinks.open {
+    max-height: 420px;
+  }
+
+  .nf-project-navlinks li {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .nf-project-navlinks a {
+    display: block;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border-dark);
+  }
+
+  .nf-project-navlinks a::after {
+    display: none;
+  }
+
+  .nf-project-hire-btn {
+    display: none;
+  }
+
+  .nf-project-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .nf-project-hero-text {
+    margin: 0 auto;
+  }
+
+  .nf-project-hero-actions {
+    justify-content: center;
+  }
+
+  .nf-project-value-row {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nf-project-hero-image-wrap {
+    min-height: auto;
+  }
+
+  .nf-project-hero-img {
+    max-height: 460px;
+  }
+
+  .nf-project-orbit {
+    width: 420px;
+    height: 420px;
+  }
+
+  .nf-project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nf-project-cta {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nf-project-navbar {
+    height: 76px;
+  }
+
+  .nf-project-brand {
+    font-size: 24px;
+  }
+
+  .nf-project-logo {
+    font-size: 36px;
+  }
+
+  .nf-project-navlinks {
+    top: 76px;
+  }
+
+  .nf-project-hero {
+    min-height: auto;
+  }
+
+  .nf-project-hero-grid {
+    padding: 44px 0 74px;
+  }
+
+  .nf-project-hero-content h1 {
+    font-size: 44px;
+  }
+
+  .nf-project-hero-text {
+    font-size: 16px;
+  }
+
+  .nf-project-hero-actions {
+    flex-direction: column;
+  }
+
+  .nf-project-btn {
+    width: 100%;
+  }
+
+  .nf-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nf-project-stats-box {
+    grid-template-columns: 1fr;
+  }
+
+  .nf-project-stat {
+    border-right: none;
+    border-bottom: 1px solid var(--border-soft);
+    padding: 28px 24px;
+  }
+
+  .nf-project-stat:last-child {
+    border-bottom: none;
+  }
+
+  .nf-project-footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nf-project-footer-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nf-project-cta {
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nf-project-container,
+  .nf-project-navbar {
+    width: 92%;
+  }
+
+  .nf-project-thumb {
+    height: 132px;
+  }
+
+  .nf-project-filter {
+    width: 100%;
+  }
+
+  .nf-project-stat {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   MOBILE NAVBAR FIX
+========================= */
+
+@media (max-width: 992px) {
+
+  .nf-project-navlinks {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    background: rgba(2, 7, 36, 0.98);
+
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.4s ease;
+    z-index: 999;
+  }
+
+  .nf-project-navlinks.open {
+    max-height: 500px;
+    padding: 12px 0;
+  }
+
+  .nf-project-navlinks li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nf-project-navlinks a {
+    display: block;
+    padding: 16px 20px;
+    width: 100%;
+  }
+
+  .nf-project-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <header class="nf-project-header">
+    <nav class="nf-project-navbar">
+      <a href="#" class="nf-project-brand" aria-label="Noor Fiza Portfolio">
+        <span class="logo-mark">NF</span>
+        <span>Noor Fiza</span>
+      </a>
+
+      <button class="nf-project-menu-btn" id="menuBtn" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nf-project-navlinks" id="navLinks">
+        <li><a href="index.html" class="nav-link ">Home</a></li>
+        <li><a href="About.html" class="nav-link">About</a></li>
+        <li><a href="skill.html" class="nav-link">Skills</a></li>
+        <li><a href="project.html" class="nav-link active">Projects</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="https://about.me/noorhameed" target="_blank" class="nf-project-hire-btn">
+        Hire Me <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="nf-project-hero" id="home">
+      <div class="nf-project-hero-pattern nf-pattern-left"></div>
+      <div class="nf-project-hero-pattern nf-pattern-right"></div>
+
+      <div class="nf-project-container nf-project-hero-grid">
+        <div class="nf-project-hero-content reveal">
+          <p class="nf-project-eyebrow">MY PROJECTS</p>
+          <h1>Projects & Portfolio</h1>
+          <p class="nf-project-hero-text">
+            Explore my work across WordPress development, e-commerce solutions,
+            digital marketing campaigns, eBay store management, frontend
+            development, video editing, and ACCA-related professional growth.
+            Each project reflects creativity, strategy, and results.
+          </p>
+
+          <div class="nf-project-hero-actions">
+            <a href="#projects" class="nf-project-btn nf-project-btn-primary">
+              View All Projects <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a href="contact.html" class="nf-project-btn nf-project-btn-outline">
+              Contact Me <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+
+          <div class="nf-project-value-row">
+            <div class="nf-project-value-card">
+              <i class="fa-solid fa-lightbulb"></i>
+              <div>
+                <h3>Creative Work</h3>
+                <p>Original ideas and modern solutions</p>
+              </div>
+            </div>
+
+            <div class="nf-project-value-card">
+              <i class="fa-solid fa-chart-line"></i>
+              <div>
+                <h3>Business Results</h3>
+                <p>Projects that drive growth & impact</p>
+              </div>
+            </div>
+
+            <div class="nf-project-value-card">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <h3>Professional Quality</h3>
+                <p>High standards with attention to detail</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nf-project-hero-image-wrap reveal">
+          <div class="nf-project-orbit"></div>
+          <img
+            src="image/fiza.png"
+            alt="Noor Fiza working on portfolio projects with laptop"
+            class="nf-project-hero-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="nf-project-featured" id="projects">
+      <div class="nf-project-container">
+        <div class="nf-project-section-heading reveal">
+          <p class="nf-project-eyebrow">MY WORK IN ACTION</p>
+          <h2>Featured Projects</h2>
+          <span></span>
+        </div>
+
+        <div class="nf-project-filter-row reveal">
+          <button class="nf-project-filter active" data-filter="all">All Projects</button>
+          <button class="nf-project-filter" data-filter="wordpress">WordPress</button>
+          <button class="nf-project-filter" data-filter="ecommerce">E-commerce</button>
+          <button class="nf-project-filter" data-filter="marketing">Digital Marketing</button>
+          <button class="nf-project-filter" data-filter="ebay">eBay</button>
+          <button class="nf-project-filter" data-filter="frontend">Frontend</button>
+          <button class="nf-project-filter" data-filter="video">Video Editing</button>
+          <button class="nf-project-filter" data-filter="acca">ACCA</button>
+        </div>
+
+        <div class="nf-project-grid">
+          <article class="nf-project-card reveal" data-category="wordpress">
+            <div class="nf-project-thumb nf-thumb-wordpress">
+              <div>
+                <strong>We Build</strong>
+                <span>Your Success</span>
+              </div>
+            </div>
+            <div class="nf-project-card-body">
+              <p class="nf-project-card-category">
+                <i class="fa-brands fa-wordpress"></i> WordPress
+              </p>
+              <h3>Business Website Design</h3>
+              <p>
+                Responsive corporate website for a consulting business.
+              </p>
+              <small>Tools: WordPress, Elementor, PHP</small>
+              <a href="index.html" class="nf-project-view-link">
+                View Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="nf-project-card reveal" data-category="ecommerce">
+            <div class="nf-project-thumb nf-thumb-ecommerce">
+              <div>
+                <strong>Fashion</strong>
+                <span>Online Store</span>
+              </div>
+            </div>
+            <div class="nf-project-card-body">
+              <p class="nf-project-card-category">
+                <i class="fa-solid fa-cart-shopping"></i> E-commerce
+              </p>
+              <h3>Online Store Setup</h3>
+              <p>
+                Complete online store with product pages, cart and secure checkout.
+              </p>
+              <small>Tools: WooCommerce, WordPress</small>
+              <a href="#" class="nf-project-view-link">
+                View Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="nf-project-card reveal" data-category="marketing">
+            <div class="nf-project-thumb nf-thumb-marketing">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <div class="nf-project-card-body">
+              <p class="nf-project-card-category">
+                <i class="fa-solid fa-bullhorn"></i> Digital Marketing
+              </p>
+              <h3>Social Media Campaign</h3>
+              <p>
+                Targeted campaign to boost brand engagement and generate leads.
+              </p>
+              <small>Tools: Meta Ads, Canva, Analytics</small>
+              <a href="#" class="nf-project-view-link">
+                View Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="nf-project-card reveal" data-category="ebay">
+            <div class="nf-project-thumb nf-thumb-ebay">
+              <div class="nf-ebay-logo">eBay</div>
+              <div class="nf-mini-chart"></div>
+            </div>
+            <div class="nf-project-card-body">
+              <p class="nf-project-card-category">
+                <i class="fa-brands fa-ebay"></i> eBay
+              </p>
+              <h3>eBay Store Management</h3>
+              <p>
+                Handled listings optimization, order processing and customer care.
+              </p>
+              <small>Tools: eBay Seller Hub, SEO</small>
+              <a href="#" class="nf-project-view-link">
+                View Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="nf-project-card reveal" data-category="frontend">
+            <div class="nf-project-thumb nf-thumb-frontend">
+              <div class="nf-code-window">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="nf-project-card-body">
+              <p class="nf-project-card-category">
+                <i class="fa-solid fa-code"></i> Frontend
+              </p>
+              <h3>Responsive Landing Page</h3>
+              <p>
+                Modern landing page built with HTML, CSS and JavaScript.
+              </p>
+              <small>Tools: HTML, CSS, JavaScript</small>
+              <a href="#" class="nf-project-view-link">
+                View Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="nf-project-card reveal" data-category="video">
+            <div class="nf-project-thumb nf-thumb-video">
+              <i class="fa-solid fa-play"></i>
+              <div class="nf-video-line"></div>
+            </div>
+            <div class="nf-project-card-body">
+              <p class="nf-project-card-category">
+                <i class="fa-solid fa-film"></i> Video Editing
+              </p>
+              <h3>Promotional Video Editing</h3>
+              <p>
+                Edited promotional reels, ads and brand videos.
+              </p>
+              <small>Tools: Premiere Pro, After Effects</small>
+              <a href="#" class="nf-project-view-link">
+                View Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="nf-project-card reveal" data-category="acca">
+            <div class="nf-project-thumb nf-thumb-acca">
+              <div class="nf-acca-badge">ACCA</div>
+            </div>
+            <div class="nf-project-card-body">
+              <p class="nf-project-card-category">
+                <i class="fa-solid fa-chart-column"></i> ACCA / Business
+              </p>
+              <h3>ACCA Study Journey</h3>
+              <p>
+                Presentation showcasing academic and professional growth.
+              </p>
+              <small>Tools: PowerPoint, Canva</small>
+              <a href="#" class="nf-project-view-link">
+                View Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="nf-project-card reveal" data-category="wordpress">
+            <div class="nf-project-thumb nf-thumb-portfolio">
+              <span>NF</span>
+              <strong>Portfolio</strong>
+            </div>
+            <div class="nf-project-card-body">
+              <p class="nf-project-card-category">
+                <i class="fa-brands fa-wordpress"></i> WordPress
+              </p>
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                Custom portfolio website to showcase skills, projects and services.
+              </p>
+              <small>Tools: WordPress, Elementor</small>
+              <a href="#" class="nf-project-view-link">
+                View Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="nf-project-stats-section">
+      <div class="nf-project-container">
+        <div class="nf-project-stats-box reveal">
+          <div class="nf-project-stat">
+            <div class="nf-project-stat-icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div>
+              <h3>20+</h3>
+              <h4>Projects Completed</h4>
+              <p>Successful projects delivered across multiple domains.</p>
+            </div>
+          </div>
+
+          <div class="nf-project-stat">
+            <div class="nf-project-stat-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div>
+              <h3>15+</h3>
+              <h4>Happy Clients</h4>
+              <p>Satisfied clients who trust my work and expertise.</p>
+            </div>
+          </div>
+
+          <div class="nf-project-stat">
+            <div class="nf-project-stat-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div>
+              <h3>3+</h3>
+              <h4>Years Experience</h4>
+              <p>Hands-on experience in digital and professional fields.</p>
+            </div>
+          </div>
+
+          <div class="nf-project-stat">
+            <div class="nf-project-stat-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div>
+              <h3>100%</h3>
+              <h4>Dedication</h4>
+              <p>Committed to delivering quality and value always.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="nf-project-cta-section" id="contact">
+      <div class="nf-project-container">
+        <div class="nf-project-cta reveal">
+          <div class="nf-project-cta-icon">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+
+          <div class="nf-project-cta-text">
+            <h2>Have a project in mind?</h2>
+            <p>
+              Let’s bring your ideas to life with creativity, strategy and results
+              that matter.
+            </p>
+          </div>
+
+          <a href="contact.html" class="nf-project-btn nf-project-btn-primary">
+            Let’s Work Together <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="nf-project-footer">
+    <div class="nf-project-container nf-project-footer-grid">
+      <div class="nf-project-footer-about">
+        <a href="#" class="nf-project-brand nf-footer-brand">
+          <span class="nf-project-logo">NF</span>
+          <span>Noor Fiza</span>
+        </a>
+        <p>
+          Helping businesses grow online with creative solutions in web
+          development, digital marketing, e-commerce, and video editing.
+        </p>
+
+        <div class="nf-project-socials">
+          <a href="https://www.facebook.com/noorfizahm" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/noorfiza6h/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/noorfiz6h/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NoorFiza6h" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+       <a href="https://www.upwork.com/freelancers/~016490fe7ae7784b66?viewMode=1" target="_blank" rel="noopener noreferrer" aria-label="Upwork"><i class="fa-brands fa-upwork"></i></a>
+
+        </div>
+      </div>
+
+      <div class="nf-project-footer-links">
+        <h3>Quick Links</h3>
+        <div class="nf-project-footer-link-grid">
+           <li><a href="index.html"fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="About.html"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+            <li><a href="skill.html"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+            <li><a href="project.html"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+        </div>
+      </div>
+
+      <div class="nf-project-footer-contact">
+        <h3>Contact Info</h3>
+        <p><i class="fa-regular fa-envelope"></i> noorfiza6h@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +92 3236556906</p>
+        <p><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</p>
+      </div>
+
+      <div class="nf-project-footer-work">
+        <h3>Let’s Work Together</h3>
+        <p>Have a project in mind? I’d love to hear about it.</p>
+        <a href="mailto:hello@noorfiza.com" class="nf-project-btn nf-project-btn-primary">
+          Let’s Work Together <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="nf-project-copyright">
+      © 2024 Noor Fiza. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    /* =========================
+   MOBILE NAVBAR TOGGLE
+========================= */
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+if (menuBtn && navLinks) {
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+
+    // Icon Change
+    const icon = menuBtn.querySelector("i");
+
+    if (navLinks.classList.contains("open")) {
+      icon.classList.remove("fa-bars");
+      icon.classList.add("fa-xmark");
+    } else {
+      icon.classList.remove("fa-xmark");
+      icon.classList.add("fa-bars");
+    }
+  });
+
+  // Close menu when clicking nav link
+  document.querySelectorAll(".nf-project-navlinks a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+
+      const icon = menuBtn.querySelector("i");
+      icon.classList.remove("fa-xmark");
+      icon.classList.add("fa-bars");
+    });
+  });
+}
+
+/* =========================
+   SMOOTH SCROLL
+========================= */
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (event) {
+    const targetId = this.getAttribute("href");
+
+    if (targetId.length > 1) {
+      event.preventDefault();
+
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    }
+  });
+});
+
+/* =========================
+   REVEAL ANIMATION
+========================= */
+const revealItems = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.15
+  }
+);
+
+revealItems.forEach((item) => revealObserver.observe(item));
+
+/* =========================
+   PROJECT FILTER
+========================= */
+const filterButtons = document.querySelectorAll(".nf-project-filter");
+const projectCards = document.querySelectorAll(".nf-project-card");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const selectedCategory = button.getAttribute("data-filter");
+
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    projectCards.forEach((card) => {
+      const cardCategory = card.getAttribute("data-category");
+
+      if (
+        selectedCategory === "all" ||
+        selectedCategory === cardCategory
+      ) {
+        card.style.display = "block";
+
+        setTimeout(() => {
+          card.style.opacity = "1";
+          card.style.transform = "translateY(0)";
+        }, 80);
+      } else {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(18px)";
+
+        setTimeout(() => {
+          card.style.display = "none";
+        }, 250);
+      }
+    });
+  });
+});
+
+/* =========================
+   ACTIVE NAVBAR LINK
+========================= */
+const sections = document.querySelectorAll("section[id]");
+const navItems = document.querySelectorAll(".nf-project-navlinks a");
+
+window.addEventListener("scroll", () => {
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 120;
+    const sectionHeight = section.offsetHeight;
+
+    if (
+      window.scrollY >= sectionTop &&
+      window.scrollY < sectionTop + sectionHeight
+    ) {
+      currentSection = section.getAttribute("id");
+    }
+  });
+
+  navItems.forEach((item) => {
+  
+
+    if (item.getAttribute("href") === `#${currentSection}`) {
+      item.classList.add("active");
+    }
+  });
+});
+  </script>
+</body>
+</html>

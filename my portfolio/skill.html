@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Skills & Expertise | Noor Fiza Portfolio</title>
+  <meta
+    name="description"
+    content="Explore Noor Fiza's professional skills in WordPress development, digital marketing, e-commerce, eBay store management, frontend development, video editing, and ACCA-focused business learning."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet"
+  />
+<link rel="shortcut icon" href="image/NOOR FIZA.png" type="image/x-icon">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+ <style>
+  :root {
+  --bg-dark: #020724;
+  --bg-navy: #061037;
+  --bg-deep: #01051a;
+  --bg-panel: #0a1540;
+
+  --primary: #8b4dff;
+  --primary-light: #a66bff;
+  --primary-dark: #5d2bd6;
+
+  --purple-soft: #eee7ff;
+  --purple-glow: rgba(139, 77, 255, 0.45);
+  --purple-glow-soft: rgba(139, 77, 255, 0.18);
+
+  --text-white: #ffffff;
+  --text-light: #f3f1ff;
+  --text-dark: #111638;
+  --text-navy: #14194a;
+  --text-muted: #6b6f8a;
+
+  --card-bg: #ffffff;
+  --section-soft: #f5f0ff;
+  --section-lavender: #f1eaff;
+  
+
+  --border-soft: #e6e0f5;
+  --border-dark: rgba(255, 255, 255, 0.12);
+
+  --shadow-soft: 0 12px 35px rgba(10, 15, 45, 0.12);
+  --shadow-hover: 0 20px 45px rgba(10, 15, 45, 0.18);
+  --shadow-purple: 0 0 25px rgba(139, 77, 255, 0.45);
+
+  --radius-card: 18px;
+  --radius-pill: 999px;
+  --transition: all 0.35s ease;
+
+  --font-main: "Inter", sans-serif;
+  --font-heading: "Playfair Display", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--text-white);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: min(92%, 1280px);
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 84px;
+  background: rgba(2, 7, 36, 0.92);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-dark);
+  z-index: 999;
+  transition: var(--transition);
+}
+
+.header.scrolled {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-white);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.logo-mark {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 44px;
+  color: var(--primary);
+  text-shadow: var(--shadow-purple);
+  letter-spacing: -3px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.nav-link {
+  color: var(--text-light);
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  width: 0;
+  height: 3px;
+  border-radius: 20px;
+  background: var(--primary);
+  transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-light) !important;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.hire-btn,
+.footer-btn,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 9px;
+  transition: var(--transition);
+}
+
+.hire-btn {
+  padding: 14px 26px;
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  box-shadow: var(--shadow-purple);
+}
+
+.hire-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(139, 77, 255, 0.55);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-white);
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+/* Hero */
+.hero-section {
+  position: relative;
+  min-height: 565px;
+  margin-top: 80px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 35%, rgba(139, 77, 255, 0.42), transparent 30%),
+    radial-gradient(circle at 14% 25%, rgba(166, 107, 255, 0.18), transparent 32%),
+    linear-gradient(135deg, var(--bg-deep), var(--bg-dark) 45%, var(--bg-navy));
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  bottom: -82px;
+  height: 150px;
+  z-index: 2;
+  background: var(--text-white);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform: rotate(-1.2deg);
+}
+
+.hero-pattern {
+  position: absolute;
+  top: 70px;
+  left: 48%;
+  width: 150px;
+  height: 90px;
+  opacity: 0.3;
+  background-image: radial-gradient(var(--primary-light) 2px, transparent 2px);
+  background-size: 18px 18px;
+}
+
+.hero-orbit {
+  position: absolute;
+  right: 17%;
+  top: 42px;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(139, 77, 255, 0.12);
+  border-radius: 50%;
+}
+
+.hero-orbit::before,
+.hero-orbit::after {
+  content: "";
+  position: absolute;
+  inset: 34px;
+  border: 1px solid rgba(139, 77, 255, 0.12);
+  border-radius: 50%;
+}
+
+.hero-orbit::after {
+  inset: 70px;
+}
+
+.hero-wrapper {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1.03fr 0.97fr;
+  align-items: center;
+  gap: 34px;
+  min-height: 565px;
+  padding: 35px 0 64px;
+}
+
+.section-kicker {
+  display: inline-block;
+  color: var(--primary-light);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 900;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  color: var(--text-white);
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 5vw, 76px);
+  line-height: 0.95;
+  letter-spacing: -1.5px;
+  margin-bottom: 22px;
+  text-shadow: 0 6px 25px rgba(0, 0, 0, 0.28);
+}
+
+.hero-content p {
+  max-width: 610px;
+  color: var(--text-light);
+  font-size: 17px;
+  line-height: 1.75;
+  font-weight: 600;
+  opacity: 0.92;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.hero-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 28px;
+  max-width: 650px;
+}
+
+.highlight-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 86px;
+  padding: 16px;
+  border: 1px solid var(--border-dark);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(12px);
+  transition: var(--transition);
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-purple);
+}
+
+.highlight-card span {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: grid;
+  place-items: center;
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
+  border-radius: 50%;
+  box-shadow: 0 0 18px var(--purple-glow);
+}
+
+.highlight-card h3 {
+  color: var(--text-white);
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.highlight-card p {
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--text-light);
+}
+.hero-image {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-glow {
+  position: absolute;
+  right: 18%;
+  bottom: 52px;
+  width: 430px;
+  height: 390px;
+  background: radial-gradient(circle, var(--purple-glow), transparent 68%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  position: relative;
+  z-index: 2;
+  width: 390px;
+  height: 390px;
+  max-width: 100%;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 50%;
+  filter: drop-shadow(0 22px 36px rgba(0, 0, 0, 0.38));
+}
+
+/* General Sections */
+.section {
+  padding: 36px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.section-heading span {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.section-heading h2 {
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+  color: var(--text-navy);
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.section-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 58px;
+  height: 4px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  transform: translateX(-50%);
+}
+
+/* Core Skills */
+.core-skills {
+  position: relative;
+  z-index: 5;
+  padding-top: 55px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.skill-card {
+  padding: 22px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-hover), var(--shadow-purple);
+}
+
+.skill-top {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  min-height: 110px;
+}
+
+.skill-icon {
+  width: 62px;
+  height: 62px;
+  flex: 0 0 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--bg-navy);
+  background: var(--purple-soft);
+  font-size: 28px;
+  box-shadow: inset 0 0 0 1px var(--border-soft);
+}
+
+.icon-text {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--primary-dark);
+}
+
+.skill-card h3 {
+  color: var(--text-navy);
+  font-size: 18px;
+  margin-bottom: 9px;
+  font-weight: 900;
+}
+
+.skill-card p {
+  color: var(--text-navy);
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.progress-area {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  height: 9px;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: #e6e0f5;
+}
+
+.progress-fill {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  box-shadow: 0 0 16px var(--purple-glow);
+  transition: width 1.3s ease;
+}
+
+.progress-area strong {
+  color: var(--text-navy);
+  font-size: 14px;
+}
+
+/* Value Section */
+.value-section {
+  padding-top: 18px;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.value-card {
+  display: flex;
+  gap: 14px;
+  padding: 24px 18px;
+  border-right: 1px solid var(--border-soft);
+  transition: var(--transition);
+}
+
+.value-card:last-child {
+  border-right: 0;
+}
+
+.value-card:hover {
+  background: var(--section-soft);
+  transform: translateY(-4px);
+}
+
+.value-card i {
+  color: var(--primary);
+  font-size: 32px;
+  min-width: 36px;
+  margin-top: 3px;
+}
+
+.value-card h3 {
+  color: var(--text-navy);
+  font-size: 15px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  font-weight: 900;
+}
+
+.value-card p {
+  color: var(--text-navy);
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/* Tools */
+.tools-section {
+  padding-top: 24px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.tool-card {
+  min-height: 112px;
+  padding: 18px 12px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.tool-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-purple);
+}
+
+.tool-card i,
+.tool-text {
+  font-size: 42px;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.tool-card h3 {
+  color: var(--text-navy);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.tool-text {
+  display: inline-block;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.ebay-logo {
+  color: var(--primary);
+  font-size: 34px;
+}
+
+.canva-logo {
+  color: var(--text-white);
+  background: linear-gradient(135deg, #00c4cc, var(--primary));
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.pr-logo {
+  color: var(--text-white);
+  background: var(--bg-navy);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+/* Strengths */
+.strengths-section {
+  padding-top: 24px;
+}
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.strength-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 132px;
+  padding: 24px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.strength-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-purple);
+}
+
+.big-icon {
+  width: 74px;
+  height: 74px;
+  flex: 0 0 74px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--bg-navy);
+  background: var(--purple-soft);
+  font-size: 34px;
+}
+
+.strength-card h3 {
+  color: var(--text-navy);
+  font-size: 17px;
+  margin-bottom: 8px;
+  font-weight: 900;
+}
+
+.strength-card p {
+  color: var(--text-navy);
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/* Growth */
+.growth-section {
+  padding-top: 20px;
+  padding-bottom: 55px;
+}
+
+.growth-card {
+  display: grid;
+  grid-template-columns: 0.9fr 1.35fr 0.9fr;
+  gap: 28px;
+  align-items: center;
+  padding: 36px;
+  background: linear-gradient(135deg, var(--section-soft), var(--text-white), var(--section-lavender));
+  border: 1px solid var(--border-soft);
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.growth-illustration {
+  position: relative;
+  min-height: 230px;
+  display: grid;
+  place-items: center;
+}
+
+.growth-illustration::before {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 150px;
+  bottom: 18px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--text-white), var(--purple-soft));
+  box-shadow: var(--shadow-soft);
+}
+
+.growth-illustration i {
+  position: absolute;
+  z-index: 2;
+  color: var(--bg-navy);
+  filter: drop-shadow(0 12px 20px rgba(10, 15, 45, 0.16));
+}
+
+.cap-icon {
+  top: 26px;
+  left: 54px;
+  font-size: 92px;
+  color: var(--bg-navy) !important;
+}
+
+.calc-icon {
+  bottom: 18px;
+  right: 48px;
+  font-size: 82px;
+  color: var(--primary-dark) !important;
+}
+
+.chart-icon {
+  top: 90px;
+  right: 50px;
+  font-size: 58px;
+  color: var(--primary-light) !important;
+}
+
+.growth-content span {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.growth-content h2 {
+  color: var(--text-navy);
+  font-size: clamp(28px, 3vw, 40px);
+  margin: 8px 0 18px;
+  font-weight: 900;
+}
+
+.growth-content p {
+  color: var(--text-navy);
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.growth-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.growth-points div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.growth-points i {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: grid;
+  place-items: center;
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary-light), var(--primary));
+  border-radius: 50%;
+}
+
+.growth-points h3 {
+  color: var(--text-navy);
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 900;
+}
+
+.focus-box {
+  padding: 26px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--border-soft);
+}
+
+.focus-box h3 {
+  color: var(--text-navy);
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 900;
+}
+
+.focus-box li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-navy);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.focus-box i {
+  color: var(--primary);
+}
+
+/* Footer */
+.footer {
+  color: var(--text-white);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(139, 77, 255, 0.13), transparent 28%),
+    linear-gradient(135deg, var(--bg-deep), #03103a 55%, var(--bg-deep));
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 1.15fr 1fr 1.1fr;
+  gap: 34px;
+  padding: 36px 0 30px;
+}
+
+.footer-col {
+  position: relative;
+}
+
+.footer-col:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 135px;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  right: -17px;
+  top: 16px;
+}
+
+.footer-brand {
+  margin-bottom: 12px;
+
+}
+
+.footer-brand .brand-mark {
+  font-size: 3rem;
+}
+
+.footer-brand .brand-name {
+  font-size: 1.72rem;
+}
+
+.footer-about p,
+.footer-cta p {
+  color: rgba(255, 255, 255, 0.79);
+  max-width: 340px;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.social-links a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--text-white);
+  border: 2px solid rgba(255, 255, 255, 0.74);
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  border-color: var(--primary);
+  background: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-purple);
+}
+
+.footer-col h3 {
+  font-size: 1.18rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.two-column-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 28px;
+}
+
+.footer-links a,
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--primary-light);
+  transform: translateX(4px);
+}
+
+.footer-links i {
+  font-size: 0.75rem;
+}
+
+.contact-list {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-list i {
+  color: rgba(255, 255, 255, 0.88);
+  width: 28px;
+  height: 28px;
+  font-size: 1.35rem;
+  display: inline-grid;
+  place-items: center;
+}
+
+.footer-cta .btn {
+  margin-top: 18px;
+  width: 100%;
+  max-width: 300px;
+}
+.gap li{
+  margin: 10px;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 17px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1;
+  min-height: 56px;
+  padding: 0 30px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-primary {
+  color: var(--text-white);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  box-shadow: 0 10px 24px rgba(139, 77, 255, 0.35);
+}
+
+.btn-primary:hover {
+  box-shadow: var(--shadow-purple);
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .hero-mini-cards,
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reach-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: 76px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 76px;
+    right: -100%;
+    width: 290px;
+    height: calc(100vh - 76px);
+    background: var(--bg-dark);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 34px;
+    gap: 26px;
+    transition: var(--transition);
+    border-left: 1px solid var(--border-dark);
+  }
+
+  .nav-menu.show {
+    right: 0;
+  }
+
+  .nav-link::after {
+    bottom: -8px;
+  }
+
+  .hire-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 70px 0 0;
+  }
+
+  .hero-content p {
+    margin-inline: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    padding: 35px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: min(92%, 100%);
+  }
+
+  .logo {
+    font-size: 23px;
+  }
+
+  .logo-mark {
+    font-size: 36px;
+  }
+
+  .hero-section {
+    min-height: auto;
+  }
+
+  .hero-mini-cards,
+  .form-row,
+  .why-grid,
+  .reach-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card,
+  .info-card,
+  .social-box {
+    padding: 22px;
+  }
+
+  .why-card {
+    align-items: flex-start;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-link-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    padding-inline: 20px;
+  }
+
+  .hero-buttons {
+    gap: 14px;
+  }
+
+  .mini-card {
+    text-align: left;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding-left: 50px;
+  }
+
+  .cta-text h2 {
+    font-size: 25px;
+  }
+
+  .cta-icon {
+    width: 72px;
+    height: 72px;
+    font-size: 30px;
+  }
+}
+ 
+
+/* ===== Final Responsive Fixes for Skills Page ===== */
+body.menu-open {
+  overflow: hidden;
+}
+
+.btn-outline {
+  color: var(--text-white);
+  background: rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.74);
+}
+
+.btn-outline:hover {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-purple);
+  transform: translateY(-3px);
+}
+
+.footer-grid > div {
+  position: relative;
+}
+
+.footer-grid > div:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 135px;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  right: -17px;
+  top: 16px;
+}
+
+.footer-grid h3 {
+  font-size: 1.18rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.footer-link-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 28px;
+}
+
+.footer-link-columns ul {
+  display: grid;
+  gap: 14px;
+}
+
+.footer-contact .gap {
+  display: grid;
+  gap: 16px;
+}
+
+.footer-contact .gap li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.footer-contact .gap i {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  display: inline-grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.15rem;
+}
+
+.image-glow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .skills-grid,
+  .strength-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .value-grid,
+  .tools-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .growth-card {
+    grid-template-columns: 1fr;
+  }
+
+  .growth-illustration {
+    min-height: 190px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid > div::after {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: 76px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 76px;
+    right: -100%;
+    width: min(320px, 86vw);
+    height: calc(100vh - 76px);
+    background: rgba(2, 7, 36, 0.98);
+    backdrop-filter: blur(18px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 34px;
+    gap: 26px;
+    transition: right 0.35s ease;
+    border-left: 1px solid var(--border-dark);
+    overflow-y: auto;
+    box-shadow: -18px 0 35px rgba(0, 0, 0, 0.35);
+  }
+
+  .nav-menu.show {
+    right: 0;
+  }
+
+  .nav-link::after {
+    bottom: -8px;
+  }
+
+  .hire-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+  }
+
+  .hero-section {
+    min-height: auto;
+    margin-top: 76px;
+  }
+
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+    min-height: auto;
+    padding: 70px 0 105px;
+  }
+
+  .hero-content p {
+    margin-inline: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-highlights {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-inline: auto;
+  }
+
+  .hero-image {
+    min-height: 360px;
+  }
+
+  .image-glow {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(390px, 86vw);
+    height: min(390px, 86vw);
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-orbit {
+    right: -70px;
+    opacity: 0.55;
+  }
+
+  .value-card {
+    border-right: 0;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .value-card:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: min(92%, 100%);
+  }
+
+  .logo {
+    font-size: 22px;
+    gap: 10px;
+  }
+
+  .logo-mark {
+    font-size: 34px;
+  }
+
+  .section {
+    padding: 46px 0;
+  }
+
+  .hero-wrapper {
+    padding: 58px 0 92px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(42px, 13vw, 58px);
+  }
+
+  .hero-content p {
+    font-size: 15.5px;
+  }
+
+  .hero-highlights,
+  .skills-grid,
+  .value-grid,
+  .tools-grid,
+  .strength-grid,
+  .growth-points,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-card,
+  .skill-top,
+  .strength-card,
+  .value-card {
+    align-items: flex-start;
+  }
+
+  .tools-grid {
+    gap: 16px;
+  }
+
+  .growth-card {
+    padding: 26px 20px;
+    border-radius: 18px;
+  }
+
+  .growth-illustration {
+    min-height: 170px;
+    transform: scale(0.88);
+  }
+
+  .focus-box {
+    padding: 22px;
+  }
+
+  .footer-link-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    gap: 12px;
+  }
+
+  .logo span:last-child {
+    font-size: 19px;
+  }
+
+  .hero-actions {
+    gap: 14px;
+  }
+
+  .hero-actions .btn,
+  .footer-cta .btn {
+    width: 100%;
+  }
+
+  .highlight-card,
+  .skill-card,
+  .strength-card,
+  .value-card {
+    padding: 18px;
+  }
+
+  .skill-top,
+  .strength-card,
+  .value-card {
+    gap: 14px;
+  }
+
+  .skill-icon,
+  .big-icon {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
+    font-size: 25px;
+  }
+
+  .progress-area {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .tool-card {
+    min-height: 104px;
+  }
+
+  .hero-section::after {
+    height: 110px;
+    bottom: -62px;
+  }
+}
+
+ </style>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo" aria-label="Noor Fiza Portfolio">
+        <span class="logo-mark">NF</span>
+        <span>Noor Fiza</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="About.html" class="nav-link">About</a></li>
+        <li><a href="skill.html" class="nav-link active">Skills</a></li>
+        <li><a href="project.html" class="nav-link">Projects</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="https://about.me/noorhameed" target="_blank" rel="noopener noreferrer" class="hire-btn">
+        Hire Me <i class="fa-solid fa-chevron-right"></i>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open mobile menu" aria-expanded="false" aria-controls="navMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header> 
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-pattern"></div>
+      <div class="hero-orbit"></div>
+
+      <div class="container hero-wrapper">
+        <div class="hero-content reveal">
+          <span class="section-kicker">My Skills</span>
+          <h1>Skills &amp; Expertise</h1>
+          <p>
+            I'm a multi-skilled professional specializing in WordPress development,
+            digital marketing, e-commerce, eBay store management, frontend development,
+            video editing, and pursuing ACCA studies to strengthen my finance and
+            business knowledge.
+          </p>
+
+          <div class="hero-actions">
+            <a href="project.html" class="btn btn-primary">
+              View Projects <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              Contact Me <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+
+          <div class="hero-highlights">
+            <article class="highlight-card">
+              <span><i class="fa-solid fa-sitemap"></i></span>
+              <div>
+                <h3>Multi-Skilled</h3>
+                <p>Diverse expertise across domains</p>
+              </div>
+            </article>
+
+            <article class="highlight-card">
+              <span><i class="fa-solid fa-bullhorn"></i></span>
+              <div>
+                <h3>Creative &amp; Strategic</h3>
+                <p>Solutions that blend creativity with strategy</p>
+              </div>
+            </article>
+
+            <article class="highlight-card">
+              <span><i class="fa-solid fa-briefcase"></i></span>
+              <div>
+                <h3>Business &amp; Digital</h3>
+                <p>Driving growth through smart digital solutions</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-image reveal">
+          <div class="image-glow">
+          <img src="image/laptop.jpg" alt="Noor Fiza working on laptop" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Skills -->
+    <section class="section core-skills" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>What I Do Best</span>
+          <h2>Core Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <div>
+                <h3>E-commerce</h3>
+                <p>Building and managing e-commerce stores that convert and deliver seamless shopping experiences.</p>
+              </div>
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar"><span class="progress-fill" data-level="95"></span></div>
+              <strong>95%</strong>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-solid fa-bullhorn"></i></div>
+              <div>
+                <h3>Digital Marketing</h3>
+                <p>Data-driven digital marketing strategies including SEO, social media, and paid advertising.</p>
+              </div>
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar"><span class="progress-fill" data-level="92"></span></div>
+              <strong>92%</strong>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon icon-text">eBay</div>
+              <div>
+                <h3>eBay Store Management</h3>
+                <p>Managing eBay stores, product listing, optimization, and order handling for better results.</p>
+              </div>
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar"><span class="progress-fill" data-level="90"></span></div>
+              <strong>90%</strong>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3>Frontend Development</h3>
+                <p>Creating responsive, user-friendly interfaces using HTML, CSS, and JavaScript.</p>
+              </div>
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar"><span class="progress-fill" data-level="88"></span></div>
+              <strong>88%</strong>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-brands fa-wordpress"></i></div>
+              <div>
+                <h3>WordPress Development</h3>
+                <p>Designing and developing custom WordPress websites with themes, plugins, and integrations.</p>
+              </div>
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar"><span class="progress-fill" data-level="95"></span></div>
+              <strong>95%</strong>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-solid fa-film"></i></div>
+              <div>
+                <h3>Video Editing</h3>
+                <p>Editing engaging videos for YouTube, social media, and promotional content.</p>
+              </div>
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar"><span class="progress-fill" data-level="90"></span></div>
+              <strong>90%</strong>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fa-solid fa-chart-column"></i></div>
+              <div>
+                <h3>ACCA Study / Accounting Knowledge</h3>
+                <p>Currently pursuing ACCA to enhance my knowledge in accounting, finance, and business management.</p>
+              </div>
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar"><span class="progress-fill" data-level="85"></span></div>
+              <strong>85%</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Section -->
+    <section class="section value-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>How I Add Value</span>
+          <h2>What I Bring to the Table</h2>
+        </div>
+
+        <div class="value-grid reveal">
+          <article class="value-card">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <div>
+              <h3>Store Setup &amp; Product Listing</h3>
+              <p>End-to-end store setup and optimized product listings that sell.</p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <i class="fa-solid fa-bullhorn"></i>
+            <div>
+              <h3>Social Media &amp; Meta Ads</h3>
+              <p>Grow your brand with targeted campaigns that drive results.</p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <i class="fa-solid fa-desktop"></i>
+            <div>
+              <h3>Responsive Website Design</h3>
+              <p>Modern, mobile-friendly websites that deliver great user experience.</p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <i class="fa-solid fa-window-maximize"></i>
+            <div>
+              <h3>Landing Page Development</h3>
+              <p>High-converting landing pages designed to turn visitors into customers.</p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <i class="fa-solid fa-photo-film"></i>
+            <div>
+              <h3>Video Content Creation</h3>
+              <p>Engaging videos that capture attention and communicate clearly.</p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <i class="fa-solid fa-book"></i>
+            <div>
+              <h3>Business &amp; Finance Learning</h3>
+              <p>Strengthening financial knowledge to support smarter business decisions.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="section tools-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Technologies I Work With</span>
+          <h2>Tools &amp; Platforms</h2>
+        </div>
+
+        <div class="tools-grid">
+          <article class="tool-card reveal">
+            <i class="fa-brands fa-wordpress"></i>
+            <h3>WordPress</h3>
+          </article>
+
+          <article class="tool-card reveal">
+            <span class="tool-text">Woo</span>
+            <h3>WooCommerce</h3>
+          </article>
+
+          <article class="tool-card reveal">
+            <span class="tool-text ebay-logo">eBay</span>
+            <h3>eBay</h3>
+          </article>
+
+          <article class="tool-card reveal">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML</h3>
+          </article>
+
+          <article class="tool-card reveal">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS</h3>
+          </article>
+
+          <article class="tool-card reveal">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+          </article>
+
+          <article class="tool-card reveal">
+            <span class="tool-text canva-logo">Canva</span>
+            <h3>Canva</h3>
+          </article>
+
+          <article class="tool-card reveal">
+            <i class="fa-solid fa-scissors"></i>
+            <h3>CapCut</h3>
+          </article>
+
+          <article class="tool-card reveal">
+            <span class="tool-text pr-logo">Pr</span>
+            <h3>Adobe Premiere Pro</h3>
+          </article>
+
+          <article class="tool-card reveal">
+            <i class="fa-brands fa-meta"></i>
+            <h3>Meta Ads</h3>
+          </article>
+
+          <article class="tool-card reveal">
+            <i class="fa-solid fa-file-excel"></i>
+            <h3>Excel</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strengths -->
+    <section class="section strengths-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>Why Clients Choose Me</span>
+          <h2>Professional Strengths</h2>
+        </div>
+
+        <div class="strength-grid">
+          <article class="strength-card reveal">
+            <div class="big-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div>
+              <h3>Creative Thinking</h3>
+              <p>I bring fresh ideas and creative perspectives to solve problems and deliver unique solutions.</p>
+            </div>
+          </article>
+
+          <article class="strength-card reveal">
+            <div class="big-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div>
+              <h3>Technical Skills</h3>
+              <p>Strong in development and digital tools to build functional, scalable, and efficient solutions.</p>
+            </div>
+          </article>
+
+          <article class="strength-card reveal">
+            <div class="big-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <div>
+              <h3>Marketing Strategy</h3>
+              <p>I plan and execute strategies that increase visibility, engagement, and business growth.</p>
+            </div>
+          </article>
+
+          <article class="strength-card reveal">
+            <div class="big-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div>
+              <h3>Business Mindset</h3>
+              <p>I think beyond tasks—focusing on results, ROI, and long-term business success.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Growth -->
+    <section class="section growth-section">
+      <div class="container">
+        <div class="growth-card reveal">
+          <div class="growth-illustration">
+            <i class="fa-solid fa-graduation-cap cap-icon"></i>
+            <i class="fa-solid fa-calculator calc-icon"></i>
+            <i class="fa-solid fa-chart-column chart-icon"></i>
+          </div>
+
+          <div class="growth-content">
+            <span>Learning Today, Leading Tomorrow</span>
+            <h2>Academic &amp; Professional Growth</h2>
+            <p>
+              I am currently pursuing ACCA studies to strengthen my understanding
+              of accounting, finance, and business management. This journey enhances
+              my ability to make data-driven decisions, understand financial strategy,
+              and contribute to business growth with strong analytical skills.
+            </p>
+
+            <div class="growth-points">
+              <div>
+                <i class="fa-solid fa-chart-pie"></i>
+                <h3>Stronger Financial Understanding</h3>
+              </div>
+              <div>
+                <i class="fa-solid fa-clipboard-check"></i>
+                <h3>Better Business Decision Making</h3>
+              </div>
+              <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Long-Term Career Growth</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="focus-box">
+            <h3>My ACCA Focus Areas</h3>
+            <ul>
+              <li><i class="fa-regular fa-circle-check"></i> Financial Accounting</li>
+              <li><i class="fa-regular fa-circle-check"></i> Management Accounting</li>
+              <li><i class="fa-regular fa-circle-check"></i> Taxation</li>
+              <li><i class="fa-regular fa-circle-check"></i> Audit &amp; Assurance</li>
+              <li><i class="fa-regular fa-circle-check"></i> Financial Management</li>
+              <li><i class="fa-regular fa-circle-check"></i> Business &amp; Ethics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+   <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="brand footer-brand" >
+          <span  class="logo-mark" >NF</span>
+          <span class="brand-name">Noor Fiza</span>
+        </a>
+        <p>
+          Helping businesses grow online with creative solutions in web development,
+          digital marketing, e-commerce, and video editing.
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/noorfizahm" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/noorfiza6h/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/noorfiz6h/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NoorFiza6h" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.upwork.com/freelancers/~016490fe7ae7784b66?viewMode=1" target="_blank" rel="noopener noreferrer" aria-label="Upwork"><i class="fa-brands fa-upwork"></i></a>
+
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <div class="footer-link-columns">
+          <ul>
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="About.html"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+            
+            <li><a href="skill.html"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+          </ul>
+          <ul>
+            <li><a href="project.html"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div> 
+
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <ul class="gap">
+          <li><i class="fa-regular fa-envelope"></i> noorfiza6h@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +92 3236556906</li>
+          <li><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</li>
+        </ul>
+      </div>
+
+      <div class="footer-cta">
+        <h3>Let's Work Together</h3>
+        <p>Have a project in mind? I'd love to hear about it.</p>
+        <a href="contact.html" class="btn btn-primary">
+          Let's Work Together <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Noor Fiza. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+    const navLinks = document.querySelectorAll(".nav-link");
+    const header = document.getElementById("header");
+
+    if (menuToggle && navMenu) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen = navMenu.classList.toggle("show");
+        document.body.classList.toggle("menu-open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+
+        const icon = menuToggle.querySelector("i");
+        if (icon) {
+          icon.classList.toggle("fa-bars", !isOpen);
+          icon.classList.toggle("fa-xmark", isOpen);
+        }
+      });
+    }
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (navMenu) navMenu.classList.remove("show");
+        document.body.classList.remove("menu-open");
+        if (menuToggle) {
+          menuToggle.setAttribute("aria-expanded", "false");
+          const icon = menuToggle.querySelector("i");
+          if (icon) {
+            icon.classList.add("fa-bars");
+            icon.classList.remove("fa-xmark");
+          }
+        }
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      if (!header) return;
+      header.classList.toggle("scrolled", window.scrollY > 40);
+    });
+
+    // Keep page navigation active without breaking multi-page links
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href") || "";
+      const linkPage = href.split("/").pop();
+      link.classList.toggle("active", linkPage === currentPage || (currentPage === "" && linkPage === "index.html"));
+    });
+
+    // Reveal animation and progress bars
+    const revealElements = document.querySelectorAll(".reveal");
+    const progressBars = document.querySelectorAll(".progress-fill");
+
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    revealElements.forEach((element) => revealObserver.observe(element));
+
+    const progressObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const level = entry.target.getAttribute("data-level") || "0";
+            entry.target.style.width = `${level}%`;
+            progressObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.35 }
+    );
+
+    progressBars.forEach((bar) => progressObserver.observe(bar));
+  </script>
+</body>
+</html>
